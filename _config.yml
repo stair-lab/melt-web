@@ -1,10 +1,12 @@
-title: Business Frontpage
-description: A business home page starter template for Bootstrap 4 featuring marketing boxes and a full width image header.
+title: ViLLM
+description: "Crossing Linguistic Horizons: Finetuning and Comprehensive Evaluation of Vietnamese Large Language Models"
 
 # disabled because we are using a custom domain
-#baseurl: /business-frontpage 
+# baseurl: /
 
-color-scheme: "mediumseagreen" # the scheme can be any HEX code like "#00aa55"
+color-primary: "#B1040E"
+color-light: "#E50808"
+color-dark: "#820000"
 
 sass:
   sass_dir: /assets/css/_sass

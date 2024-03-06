@@ -4,7 +4,9 @@
 @charset "utf-8";
 
 $theme-colors: (
-  "primary": {{site.color-scheme}}
+  "primary": {{site.color-primary}},
+  "light": {{site.color-light}},
+  "dark": {{site.color-dark}},
 );
 
 // Width of the content area
