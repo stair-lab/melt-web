@@ -2,7 +2,7 @@ title: ViLLM
 description: "Crossing Linguistic Horizons: Finetuning and Comprehensive Evaluation of Vietnamese Large Language Models"
 
 # disabled because we are using a custom domain
-# baseurl: /
+baseurl: https://ai.stanford.edu/~sttruong/villm
 
 color-primary: "#B1040E"
 color-light: "#E50808"

@@ -19,7 +19,7 @@
       <ul class="navbar-nav ml-auto">
         {% for item in site.data.menu %}
         <li class="nav-item{% if item.link == page.url %} active {% endif %}">
-          <a class="nav-link" href="{{ item.link }}">{{
+          <a class="nav-link" href="{% if (item.title == 'GitHub') or (item.title == 'HuggingFace') or (item.title == 'Paper') %}{{ item.link }}{% else %}{{ site.baseurl }}{{ item.link }}{% endif %}">{{
             item.title
           }}</a>
         </li>
