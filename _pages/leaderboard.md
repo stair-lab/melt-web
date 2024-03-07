@@ -24,7 +24,7 @@ Below are our evaluation results, please choose the task and screenario to view 
                 Question-Answering
             </td>
             <td>
-                <a href="/leaderboard/zero-shot/question-answering">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/zero-shot/question-answering">View</a>
             </td>
             <td>
                 -
@@ -33,16 +33,16 @@ Below are our evaluation results, please choose the task and screenario to view 
                 -
             </td>
             <td>
-                <a href="/leaderboard/weaker-prompt/question-answering">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/weaker-prompt/question-answering">View</a>
             </td>
             <td>
-                <a href="/leaderboard/fairness-aware/question-answering">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/fairness-aware/question-answering">View</a>
             </td>
             <td>
-                <a href="/leaderboard/robustness-aware/question-answering">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/robustness-aware/question-answering">View</a>
             </td>
             <td>
-                <a href="/leaderboard/bias-toxicity/question-answering">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/bias-toxicity/question-answering">View</a>
             </td>
         </tr>
         <tr class="text-center">
@@ -50,7 +50,7 @@ Below are our evaluation results, please choose the task and screenario to view 
                 Summarization
             </td>
             <td>
-                <a href="/leaderboard/zero-shot/summarization">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/zero-shot/summarization">View</a>
             </td>
             <td>
                 -
@@ -59,16 +59,16 @@ Below are our evaluation results, please choose the task and screenario to view 
                 -
             </td>
             <td>
-                <a href="/leaderboard/weaker-prompt/summarization">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/weaker-prompt/summarization">View</a>
             </td>   
             <td>
                 -
             </td>
             <td>
-                <a href="/leaderboard/robustness-aware/summarization">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/robustness-aware/summarization">View</a>
             </td>
             <td>
-                <a href="/leaderboard/bias-toxicity/summarization">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/bias-toxicity/summarization">View</a>
             </td>
         </tr>
         <tr class="text-center">
@@ -76,22 +76,22 @@ Below are our evaluation results, please choose the task and screenario to view 
                 Sentiment Analysis
             </td>
             <td>
-                <a href="/leaderboard/zero-shot/sentiment-analysis">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/zero-shot/sentiment-analysis">View</a>
             </td>
             <td>
-                <a href="/leaderboard/few-shot/sentiment-analysis">View</a>
-            </td>
-            <td>
-                -
+                <a href="{{ site.baseurl }}/leaderboard/few-shot/sentiment-analysis">View</a>
             </td>
             <td>
                 -
             </td>
             <td>
-                <a href="/leaderboard/fairness-aware/sentiment-analysis">View</a>
+                -
             </td>
             <td>
-                <a href="/leaderboard/robustness-aware/sentiment-analysis">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/fairness-aware/sentiment-analysis">View</a>
+            </td>
+            <td>
+                <a href="{{ site.baseurl }}/leaderboard/robustness-aware/sentiment-analysis">View</a>
             </td>
             <td>
                 -
@@ -102,22 +102,22 @@ Below are our evaluation results, please choose the task and screenario to view 
                 Text Classification
             </td>
             <td>
-                <a href="/leaderboard/zero-shot/text-classification">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/zero-shot/text-classification">View</a>
             </td>
             <td>
-                <a href="/leaderboard/few-shot/text-classification">View</a>
-            </td>
-            <td>
-                -
+                <a href="{{ site.baseurl }}/leaderboard/few-shot/text-classification">View</a>
             </td>
             <td>
                 -
             </td>
             <td>
-                <a href="/leaderboard/fairness-aware/text-classification">View</a>
+                -
             </td>
             <td>
-                <a href="/leaderboard/robustness-aware/text-classification">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/fairness-aware/text-classification">View</a>
+            </td>
+            <td>
+                <a href="{{ site.baseurl }}/leaderboard/robustness-aware/text-classification">View</a>
             </td>
             <td>
                 -
@@ -128,22 +128,22 @@ Below are our evaluation results, please choose the task and screenario to view 
                 Knowledge
             </td>
             <td>
-                <a href="/leaderboard/zero-shot/knowledge">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/zero-shot/knowledge">View</a>
             </td>
             <td>
-                <a href="/leaderboard/few-shot/knowledge">View</a>
-            </td>
-            <td>
-                -
+                <a href="{{ site.baseurl }}/leaderboard/few-shot/knowledge">View</a>
             </td>
             <td>
                 -
             </td>
             <td>
-                <a href="/leaderboard/fairness-aware/knowledge">View</a>
+                -
             </td>
             <td>
-                <a href="/leaderboard/robustness-aware/knowledge">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/fairness-aware/knowledge">View</a>
+            </td>
+            <td>
+                <a href="{{ site.baseurl }}/leaderboard/robustness-aware/knowledge">View</a>
             </td>
             <td>
                 -
@@ -154,22 +154,22 @@ Below are our evaluation results, please choose the task and screenario to view 
                 Toxicity Detection
             </td>
             <td>
-                <a href="/leaderboard/zero-shot/toxicity-detection">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/zero-shot/toxicity-detection">View</a>
             </td>
             <td>
-                <a href="/leaderboard/few-shot/toxicity-detection">View</a>
-            </td>
-            <td>
-                -
+                <a href="{{ site.baseurl }}/leaderboard/few-shot/toxicity-detection">View</a>
             </td>
             <td>
                 -
             </td>
             <td>
-                <a href="/leaderboard/fairness-aware/toxicity-detection">View</a>
+                -
             </td>
             <td>
-                <a href="/leaderboard/robustness-aware/toxicity-detection">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/fairness-aware/toxicity-detection">View</a>
+            </td>
+            <td>
+                <a href="{{ site.baseurl }}/leaderboard/robustness-aware/toxicity-detection">View</a>
             </td>
             <td>
                 -
@@ -180,22 +180,22 @@ Below are our evaluation results, please choose the task and screenario to view 
                 Information Retrieval
             </td>
             <td>
-                <a href="/leaderboard/zero-shot/information-retrieval">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/zero-shot/information-retrieval">View</a>
             </td>
             <td>
-                <a href="/leaderboard/few-shot/information-retrieval">View</a>
-            </td>
-            <td>
-                -
+                <a href="{{ site.baseurl }}/leaderboard/few-shot/information-retrieval">View</a>
             </td>
             <td>
                 -
             </td>
             <td>
-                <a href="/leaderboard/fairness-aware/information-retrieval">View</a>
+                -
             </td>
             <td>
-                <a href="/leaderboard/robustness-aware/information-retrieval">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/fairness-aware/information-retrieval">View</a>
+            </td>
+            <td>
+                <a href="{{ site.baseurl }}/leaderboard/robustness-aware/information-retrieval">View</a>
             </td>
             <td>
                 -
@@ -206,19 +206,19 @@ Below are our evaluation results, please choose the task and screenario to view 
                 Language Modeling
             </td>
             <td>
-                <a href="/leaderboard/zero-shot/language-modeling">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/zero-shot/language-modeling">View</a>
             </td>
             <td>
-                <a href="/leaderboard/few-shot/language-modeling">View</a>
-            </td>
-            <td>
-                -
+                <a href="{{ site.baseurl }}/leaderboard/few-shot/language-modeling">View</a>
             </td>
             <td>
                 -
             </td>
             <td>
-                <a href="/leaderboard/fairness-aware/language-modeling">View</a>
+                -
+            </td>
+            <td>
+                <a href="{{ site.baseurl }}/leaderboard/fairness-aware/language-modeling">View</a>
             </td>
             <td>
                 -
@@ -232,13 +232,13 @@ Below are our evaluation results, please choose the task and screenario to view 
                 Reasoning
             </td>
             <td>
-                <a href="/leaderboard/zero-shot/reasoning">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/zero-shot/reasoning">View</a>
             </td>
             <td>
-                <a href="/leaderboard/few-shot/reasoning">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/few-shot/reasoning">View</a>
             </td>
             <td>
-                <a href="/leaderboard/chain-of-thought/reasoning">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/chain-of-thought/reasoning">View</a>
             </td>
             <td>
                 -
@@ -261,7 +261,7 @@ Below are our evaluation results, please choose the task and screenario to view 
                 -
             </td>
             <td>
-                <a href="/leaderboard/few-shot/translation">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/few-shot/translation">View</a>
             </td>
             <td>
                 -
@@ -273,10 +273,10 @@ Below are our evaluation results, please choose the task and screenario to view 
                 -
             </td>
             <td>
-                <a href="/leaderboard/robustness-aware/translation">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/robustness-aware/translation">View</a>
             </td>
             <td>
-                <a href="/leaderboard/bias-toxicity/translation">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/bias-toxicity/translation">View</a>
             </td>
         </tr>
     </tbody>
