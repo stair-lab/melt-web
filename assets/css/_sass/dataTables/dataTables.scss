@@ -5,6 +5,7 @@ $table-row-selected: 2 117 216;
 @import './ordering.scss';
 @import './processing.scss';
 @import './typography.scss';
+@import './fixedColumns.dataTables.scss';
 
 table.dataTable.table {
 	clear: both;

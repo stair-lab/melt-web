@@ -17,6 +17,13 @@
   white-space: nowrap;
 }
 
+// tr>th:first-child,tr>td:first-child {
+//   position: sticky;
+//   left: 0;
+//   z-index: 1;
+//   background-color: #fff;
+// }
+
 table.dataTable thead .sorting:after,
 table.dataTable thead .sorting:before,
 table.dataTable thead .sorting_asc:after,
