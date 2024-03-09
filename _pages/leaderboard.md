@@ -5,7 +5,7 @@ permalink: /leaderboard/
 
 Below are our evaluation results, please choose the task and screenario to view the results.
 
-<table class="table">
+<table class="table table-striped table-bordered table-sm w-100" cellspacing="0">
     <thead>
         <tr class="text-center">
             <th><b>Models</b></th>
