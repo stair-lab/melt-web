@@ -26,7 +26,7 @@ permalink: /leaderboard/zero-shot/text-classification
     </thead>
     <tbody>
         <tr>
-            <td class="text-center"><b>Our 70B</b></td>
+            <td class="text-center"><b>URA-LLaMa 70B</b></td>
             <td class="text-center" style="background-color: cyan;">0.40 ± 0.02</td>
             <td class="text-center" style="background-color: cyan;">0.32 ± 0.02</td>
             <td class="text-center" style="background-color: cyan;">0.68 ± 0.01</td>
@@ -39,7 +39,7 @@ permalink: /leaderboard/zero-shot/text-classification
             <td class="text-center" style="background-color: cyan;">0.56 ± 0.06</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 13B</b></td>
+            <td class="text-center"><b>URA-LLaMa 13B</b></td>
             <td class="text-center">0.29 ± 0.02</td>
             <td class="text-center">0.25 ± 0.02</td>
             <td class="text-center">0.52 ± 0.01</td>
@@ -52,7 +52,7 @@ permalink: /leaderboard/zero-shot/text-classification
             <td class="text-center">0.14 ± 0.04</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 7B</b></td>
+            <td class="text-center"><b>URA-LLaMa 7B</b></td>
             <td class="text-center">0.13 ± 0.01</td>
             <td class="text-center">0.11 ± 0.01</td>
             <td class="text-center">0.50 ± 0.01</td>

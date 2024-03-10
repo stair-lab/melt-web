@@ -28,7 +28,7 @@ permalink: /leaderboard/zero-shot/language-modeling
     </thead>
     <tbody>
         <tr>
-            <td class="text-center"><b>Our 70B</b></td>
+            <td class="text-center"><b>URA-LLaMa LLaMA70B</b></td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center" style="background-color: cyan;">0.50 ± 0.01</td>
             <td class="text-center" style="background-color: cyan;">0.64 ± 0.01</td>
@@ -43,7 +43,7 @@ permalink: /leaderboard/zero-shot/language-modeling
             <td class="text-center" style="background-color: cyan;">1.09 ± 0.00</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 13B</b></td>
+            <td class="text-center"><b>URA-LLaMa LLaMA13B</b></td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.67 ± 0.00</td>
             <td class="text-center">0.78 ± 0.00</td>
@@ -58,7 +58,7 @@ permalink: /leaderboard/zero-shot/language-modeling
             <td class="text-center">1.26 ± 0.00</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 7B</b></td>
+            <td class="text-center"><b>URA-LLaMa LLaMA7B</b></td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.73 ± 0.00</td>
             <td class="text-center">0.88 ± 0.01</td>

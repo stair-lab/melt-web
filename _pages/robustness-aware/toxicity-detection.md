@@ -26,7 +26,7 @@ permalink: /leaderboard/robustness-aware/toxicity-detection
     </thead>
     <tbody>
         <tr>
-            <td class="text-center"><b>Our 70B</b></td>
+            <td class="text-center"><b>URA-LLaMa 70B</b></td>
             <td class="text-center" style="background-color: cyan;">0.32 ± 0.00</td>
             <td class="text-center">0.21 ± 0.00</td>
             <td class="text-center">0.72 ± 0.01</td>
@@ -39,7 +39,7 @@ permalink: /leaderboard/robustness-aware/toxicity-detection
             <td class="text-center">0.23 ± 0.00</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 13B</b></td>
+            <td class="text-center"><b>URA-LLaMa 13B</b></td>
             <td class="text-center">0.27 ± 0.00</td>
             <td class="text-center" style="background-color: cyan;">0.26 ± 0.00</td>
             <td class="text-center">0.56 ± 0.00</td>
@@ -52,7 +52,7 @@ permalink: /leaderboard/robustness-aware/toxicity-detection
             <td class="text-center">0.20 ± 0.00</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 7B</b></td>
+            <td class="text-center"><b>URA-LLaMa 7B</b></td>
             <td class="text-center">0.22 ± 0.00</td>
             <td class="text-center">0.21 ± 0.00</td>
             <td class="text-center">0.63 ± 0.00</td>

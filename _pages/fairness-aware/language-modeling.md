@@ -28,7 +28,7 @@ permalink: /leaderboard/fairness-aware/language-modeling
   </thead>
   <tbody>
     <tr>
-      <td class="text-center">Our 70B</td>
+      <td class="text-center">URA-LLaMa 70B</td>
       <td class="text-center">0.01 ± 0.00</td>
       <td class="text-center">0.58 ± 0.01</td>
       <td class="text-center">0.70 ± 0.01</td>
@@ -43,7 +43,7 @@ permalink: /leaderboard/fairness-aware/language-modeling
       <td class="text-center">1.13 ± 0.00</td>
     </tr>
     <tr>
-      <td class="text-center">Our 13B</td>
+      <td class="text-center">URA-LLaMa 13B</td>
       <td class="text-center" style="background-color: cyan;">0.02 ± 0.00</td>
       <td class="text-center" style="background-color: cyan;">0.40 ± 0.01</td>
       <td class="text-center">0.56 ± 0.01</td>
@@ -58,7 +58,7 @@ permalink: /leaderboard/fairness-aware/language-modeling
       <td class="text-center">1.15 ± 0.00</td>
     </tr>
     <tr>
-      <td class="text-center">Our 7B</td>
+      <td class="text-center">URA-LLaMa 7B</td>
       <td class="text-center">0.01 ± 0.00</td>
       <td class="text-center" style="background-color: cyan;">0.40 ± 0.01</td>
       <td class="text-center" style="background-color: cyan;">0.55 ± 0.01</td>

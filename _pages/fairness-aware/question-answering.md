@@ -20,21 +20,21 @@ permalink: /leaderboard/fairness-aware/question-answering
     </thead>
     <tbody>
         <tr>
-            <td class="text-center"><b>Our 70B</b></td>
+            <td class="text-center"><b>URA-LLaMa 70B</b></td>
             <td class="text-center" style="background-color: cyan;">0.04 ± 0.00</td>
             <td class="text-center" style="background-color: cyan;">0.27 ± 0.00</td>
             <td class="text-center" style="background-color: cyan;">0.03 ± 0.00</td>
             <td class="text-center" style="background-color: cyan;">0.25 ± 0.00</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 13B</b></td>
+            <td class="text-center"><b>URA-LLaMa 13B</b></td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.13 ± 0.00</td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.14 ± 0.00</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 7B</b></td>
+            <td class="text-center"><b>URA-LLaMa 7B</b></td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.13 ± 0.00</td>
             <td class="text-center">0.00 ± 0.00</td>

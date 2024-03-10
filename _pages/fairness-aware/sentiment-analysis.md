@@ -26,7 +26,7 @@ permalink: /leaderboard/fairness-aware/sentiment-analysis
     </thead>
     <tbody>
         <tr>
-            <td class="text-center"><b>Our 70B</b></td>
+            <td class="text-center"><b>URA-LLaMa 70B</b></td>
             <td class="text-center">0.65 ± 0.01</td>
             <td class="text-center">0.49 ± 0.01</td>
             <td class="text-center">0.58 ± 0.01</td>
@@ -39,7 +39,7 @@ permalink: /leaderboard/fairness-aware/sentiment-analysis
             <td class="text-center">0.66 ± 0.03</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 13B</b></td>
+            <td class="text-center"><b>URA-LLaMa 13B</b></td>
             <td class="text-center">0.59 ± 0.01</td>
             <td class="text-center" style="background-color: cyan;">0.57 ± 0.01</td>
             <td class="text-center">0.62 ± 0.01</td>
@@ -52,7 +52,7 @@ permalink: /leaderboard/fairness-aware/sentiment-analysis
             <td class="text-center">0.88 ± 0.02</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 7B</b></td>
+            <td class="text-center"><b>URA-LLaMa 7B</b></td>
             <td class="text-center" style="background-color: cyan;">0.74 ± 0.02</td>
             <td class="text-center">0.39 ± 0.06</td>
             <td class="text-center" style="background-color: cyan;">0.83 ± 0.01</td>

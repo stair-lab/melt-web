@@ -32,7 +32,7 @@ permalink: /leaderboard/robustness-aware/summarization
     </thead>
     <tbody>
         <tr>
-            <td class="text-center"><b>Our 70B</b></td>
+            <td class="text-center"><b>URA-LLaMa 70B</b></td>
             <td class="text-center">0.34 ± 0.00</td>
             <td class="text-center" style="background-color: cyan;">0.15 ± 0.00</td>
             <td class="text-center">0.23 ± 0.00</td>
@@ -51,7 +51,7 @@ permalink: /leaderboard/robustness-aware/summarization
             <td class="text-center">167.42 ± 7.09</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 13B</b></td>
+            <td class="text-center"><b>URA-LLaMa 13B</b></td>
             <td class="text-center">0.35 ± 0.00</td>
             <td class="text-center">0.14 ± 0.00</td>
             <td class="text-center">0.23 ± 0.00</td>
@@ -70,7 +70,7 @@ permalink: /leaderboard/robustness-aware/summarization
             <td class="text-center">103.69 ± 3.33</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 7B</b></td>
+            <td class="text-center"><b>URA-LLaMa 7B</b></td>
             <td class="text-center" style="background-color: cyan;">0.37 ± 0.00</td>
             <td class="text-center">0.12 ± 0.00</td>
             <td class="text-center" style="background-color: cyan;">0.24 ± 0.00</td>

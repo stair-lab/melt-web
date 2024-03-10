@@ -24,7 +24,7 @@ permalink: /leaderboard/few-shot/information-retrieval
     </thead>
     <tbody>
         <tr>
-            <td class="text-center"><b>Our 70B</b></td>
+            <td class="text-center"><b>URA-LLaMa 70B</b></td>
             <td class="text-center">0.05 ± 0.00</td>
             <td class="text-center">0.11 ± 0.00</td>
             <td class="text-center">0.06 ± 0.00</td>
@@ -35,7 +35,7 @@ permalink: /leaderboard/few-shot/information-retrieval
             <td class="text-center" style="background-color: cyan;">0.04±0.00</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 13B</b></td>
+            <td class="text-center"><b>URA-LLaMa 13B</b></td>
             <td class="text-center">0.04 ± 0.00</td>
             <td class="text-center">0.10 ± 0.00</td>
             <td class="text-center">0.06 ± 0.00</td>
@@ -46,7 +46,7 @@ permalink: /leaderboard/few-shot/information-retrieval
             <td class="text-center" style="background-color: cyan;">0.04±0.00</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 7B</b></td>
+            <td class="text-center"><b>URA-LLaMa 7B</b></td>
             <td class="text-center">0.04 ± 0.00</td>
             <td class="text-center">0.11 ± 0.00</td>
             <td class="text-center">0.06 ± 0.00</td>

@@ -26,7 +26,7 @@ permalink: /leaderboard/few-shot/sentiment-analysis
     </thead>
     <tbody>
         <tr>
-            <td class="text-center"><b>Our 70B</b></td>
+            <td class="text-center"><b>URA-LLaMa 70B</b></td>
             <td class="text-center" style="background-color: cyan;">0.66 ± 0.01</td>
             <td class="text-center">0.49 ± 0.01</td>
             <td class="text-center" style="background-color: cyan;">0.72 ± 0.01</td>
@@ -39,7 +39,7 @@ permalink: /leaderboard/few-shot/sentiment-analysis
             <td class="text-center">0.71 ± 0.02</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 13B</b></td>
+            <td class="text-center"><b>URA-LLaMa 13B</b></td>
             <td class="text-center">0.59 ± 0.01</td>
             <td class="text-center" style="background-color: cyan;">0.57 ± 0.01</td>
             <td class="text-center">0.67 ± 0.01</td>
@@ -52,7 +52,7 @@ permalink: /leaderboard/few-shot/sentiment-analysis
             <td class="text-center">0.87 ± 0.02</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 7B</b></td>
+            <td class="text-center"><b>URA-LLaMa 7B</b></td>
             <td class="text-center">0.57 ± 0.02</td>
             <td class="text-center">0.42 ± 0.05</td>
             <td class="text-center">0.69 ± 0.02</td>

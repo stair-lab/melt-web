@@ -32,7 +32,7 @@ permalink: /leaderboard/zero-shot/summarization
 </thead>
 <tbody>
 <tr>
-<td class="text-center"><b>Our 70B</b></td>
+<td class="text-center"><b>URA-LLaMa 70B</b></td>
 <td class="text-center" style="background-color: cyan;">0.42 ± 0.17</td>
 <td class="text-center" style="background-color: cyan;">0.21 ± 0.12</td>
 <td class="text-center" style="background-color: cyan;">0.28 ± 0.00</td>
@@ -51,7 +51,7 @@ permalink: /leaderboard/zero-shot/summarization
 <td class="text-center">22.24 ± 0.97</td>
 </tr>
 <tr>
-<td class="text-center"><b>Our 13B</b></td>
+<td class="text-center"><b>URA-LLaMa 13B</b></td>
 <td class="text-center">0.38 ± 0.00</td>
 <td class="text-center">0.18 ± 0.00</td>
 <td class="text-center">0.25 ± 0.00</td>
@@ -70,7 +70,7 @@ permalink: /leaderboard/zero-shot/summarization
 <td class="text-center">49.58 ± 1.16</td>
 </tr>
 <tr>
-<td class="text-center"><b>Our 7B</b></td>
+<td class="text-center"><b>URA-LLaMa 7B</b></td>
 <td class="text-center">0.38 ± 0.00</td>
 <td class="text-center">0.14 ± 0.00</td>
 <td class="text-center">0.25 ± 0.00</td>

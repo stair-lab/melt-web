@@ -24,7 +24,7 @@ permalink: /leaderboard/few-shot/translation
   </thead>
   <tbody>
     <tr>
-      <td class="text-center"><b>Our 70B</b></td>
+      <td class="text-center"><b>URA-LLaMa 70B</b></td>
       <td class="text-center" style="background-color: cyan;">0.28 ± 0.00</td>
       <td class="text-center" style="background-color: cyan;">0.59 ± 0.00</td>
       <td class="text-center" style="background-color: cyan;">0.27 ± 0.00</td>
@@ -35,7 +35,7 @@ permalink: /leaderboard/few-shot/translation
       <td class="text-center">0.41 ± 0.01</td>
     </tr>
     <tr>
-      <td class="text-center"><b>Our 13B</b></td>
+      <td class="text-center"><b>URA-LLaMa 13B</b></td>
       <td class="text-center">0.25 ± 0.00</td>
       <td class="text-center">0.55 ± 0.00</td>
       <td class="text-center">0.15 ± 0.00</td>
@@ -46,7 +46,7 @@ permalink: /leaderboard/few-shot/translation
       <td class="text-center" style="background-color: cyan;">0.43 ± 0.01</td>
     </tr>
     <tr>
-      <td class="text-center"><b>Our 7B</b></td>
+      <td class="text-center"><b>URA-LLaMa 7B</b></td>
       <td class="text-center">0.19 ± 0.00</td>
       <td class="text-center">0.50 ± 0.00</td>
       <td class="text-center">0.22 ± 0.00</td>

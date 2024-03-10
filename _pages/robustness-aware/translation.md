@@ -24,7 +24,7 @@ permalink: /leaderboard/robustness-aware/translation
     </thead>
     <tbody>
         <tr>
-            <td class="text-center">Our 70B</td>
+            <td class="text-center">URA-LLaMa 70B</td>
             <td class="text-center" style="background-color: cyan;">0.25 ± 0.00</td>
             <td class="text-center" style="background-color: cyan;">0.58 ± 0.00</td>
             <td class="text-center" style="background-color: cyan;">0.11 ± 0.00</td>
@@ -35,7 +35,7 @@ permalink: /leaderboard/robustness-aware/translation
             <td class="text-center">0.36 ± 0.00</td>
         </tr>
         <tr>
-            <td class="text-center">Our 13B</td>
+            <td class="text-center">URA-LLaMa 13B</td>
             <td class="text-center">0.23 ± 0.00</td>
             <td class="text-center">0.55 ± 0.00</td>
             <td class="text-center">0.10 ± 0.00</td>
@@ -46,7 +46,7 @@ permalink: /leaderboard/robustness-aware/translation
             <td class="text-center" style="background-color: cyan;">0.38 ± 0.00</td>
         </tr>
         <tr>
-            <td class="text-center">Our 7B</td>
+            <td class="text-center">URA-LLaMa 7B</td>
             <td class="text-center">0.15 ± 0.00</td>
             <td class="text-center">0.48 ± 0.00</td>
             <td class="text-center">0.06 ± 0.00</td>

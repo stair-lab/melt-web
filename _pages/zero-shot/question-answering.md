@@ -20,56 +20,56 @@ permalink: /leaderboard/zero-shot/question-answering
     </thead>
     <tbody>
         <tr>
-            <td class="text-center" style="background-color: cyan;">Our 70B</td>
+            <td class="text-center"><b>URA-LLaMa 70B</b></td>
             <td class="text-center" style="background-color: cyan;">0.06 ± 0.00</td>
             <td class="text-center" style="background-color: cyan;">0.30 ± 0.00</td>
             <td class="text-center" style="background-color: cyan;">0.04 ± 0.00</td>
             <td class="text-center" style="background-color: cyan;">0.28 ± 0.00</td>
         </tr>
         <tr>
-            <td class="text-center">Our 13B</td>
+            <td class="text-center"><b>URA-LLaMa 13B</b></td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.14 ± 0.00</td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.15 ± 0.00</td>
         </tr>
         <tr>
-            <td class="text-center">Our 7B</td>
+            <td class="text-center"><b>URA-LLaMa 7B</b></td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.14 ± 0.00</td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.16 ± 0.00</td>
         </tr>
         <tr>
-            <td class="text-center">LLaMa-2 13B</td>
+            <td class="text-center"><b>LLaMa-2 13B</b></td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.04 ± 0.00</td>
             <td class="text-center" style="background-color: #f0f0f0;">0.00 ± 0.02</td>
             <td class="text-center">0.05 ± 0.00</td>
         </tr>
         <tr>
-            <td class="text-center">LLaMa-2 7B</td>
+            <td class="text-center"><b>LLaMa-2 7B</b></td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.05 ± 0.00</td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.06 ± 0.00</td>
         </tr>
         <tr>
-            <td class="text-center">Vietcuna 7B</td>
+            <td class="text-center"><b>Vietcuna 7B</b></td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.00 ± 0.00</td>
         </tr>
         <tr>
-            <td class="text-center">GPT-3.5</td>
+            <td class="text-center"><b>GPT-3.5</b></td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.24 ± 0.00</td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.25 ± 0.00</td>
         </tr>
         <tr>
-            <td class="text-center">GPT-4</td>
+            <td class="text-center"><b>GPT-4</b></td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center" style="background-color: #f0f0f0;">0.27 ± 0.00</td>
             <td class="text-center">0.00 ± 0.00</td>

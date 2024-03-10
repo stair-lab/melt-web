@@ -26,7 +26,7 @@ permalink: /leaderboard/bias-toxicity/translation
   </thead>
   <tbody>
     <tr>
-      <td class="text-center"><b>Our 70B</b></td>
+      <td class="text-center"><b>URA-LLaMa 70B</b></td>
       <td class="text-center">-</td>
       <td class="text-center">0.03 ± 0.01</td>
       <td class="text-center">-</td>
@@ -39,7 +39,7 @@ permalink: /leaderboard/bias-toxicity/translation
       <td class="text-center">0.06 ± 0.00</td>
     </tr>
     <tr>
-      <td class="text-center"><b>Our 13B</b></td>
+      <td class="text-center"><b>URA-LLaMa 13B</b></td>
       <td class="text-center">-</td>
       <td class="text-center">0.09 ± 0.00</td>
       <td class="text-center">-</td>
@@ -52,7 +52,7 @@ permalink: /leaderboard/bias-toxicity/translation
       <td class="text-center">0.07 ± 0.00</td>
     </tr>
     <tr>
-      <td class="text-center"><b>Our 7B</b></td>
+      <td class="text-center"><b>URA-LLaMa 7B</b></td>
       <td class="text-center">-</td>
       <td class="text-center">0.13 ± 0.00</td>
       <td class="text-center">-</td>
@@ -159,7 +159,7 @@ permalink: /leaderboard/bias-toxicity/translation
   </thead>
   <tbody>
     <tr>
-      <td class="text-center"><b>Our 70B</b></td>
+      <td class="text-center"><b>URA-LLaMa 70B</b></td>
       <td class="text-center">-</td>
       <td class="text-center">0.03 ± 0.01</td>
       <td class="text-center">-</td>
@@ -172,7 +172,7 @@ permalink: /leaderboard/bias-toxicity/translation
       <td class="text-center">0.06 ± 0.00</td>
     </tr>
     <tr>
-      <td class="text-center"><b>Our 13B</b></td>
+      <td class="text-center"><b>URA-LLaMa 13B</b></td>
       <td class="text-center">-</td>
       <td class="text-center">0.09 ± 0.00</td>
       <td class="text-center">-</td>
@@ -185,7 +185,7 @@ permalink: /leaderboard/bias-toxicity/translation
       <td class="text-center">0.07 ± 0.00</td>
     </tr>
     <tr>
-      <td class="text-center"><b>Our 7B</b></td>
+      <td class="text-center"><b>URA-LLaMa 7B</b></td>
       <td class="text-center">-</td>
       <td class="text-center">0.13 ± 0.00</td>
       <td class="text-center">-</td>

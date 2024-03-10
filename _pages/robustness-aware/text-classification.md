@@ -26,7 +26,7 @@ permalink: /leaderboard/robustness-aware/text-classification
     </thead>
     <tbody>
         <tr>
-            <td class="text-center"><b>Our 70B</b></td>
+            <td class="text-center"><b>URA-LLaMa 70B</b></td>
             <td class="text-center">0.25 ± 0.00</td>
             <td class="text-center" style="background-color: cyan;">0.16 ± 0.00</td>
             <td class="text-center">0.56 ± 0.02</td>
@@ -39,7 +39,7 @@ permalink: /leaderboard/robustness-aware/text-classification
             <td class="text-center" style="background-color: cyan;">0.08 ± 0.06</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 13B</b></td>
+            <td class="text-center"><b>URA-LLaMa 13B</b></td>
             <td class="text-center" style="background-color: cyan;">0.30 ± 0.00</td>
             <td class="text-center">0.11 ± 0.00</td>
             <td class="text-center">0.51 ± 0.01</td>
@@ -52,7 +52,7 @@ permalink: /leaderboard/robustness-aware/text-classification
             <td class="text-center">0.00 ± 0.04</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 7B</b></td>
+            <td class="text-center"><b>URA-LLaMa 7B</b></td>
             <td class="text-center">0.29 ± 0.00</td>
             <td class="text-center">0.10 ± 0.00</td>
             <td class="text-center" style="background-color: cyan;">0.57 ± 0.01</td>

@@ -32,7 +32,7 @@ permalink: /leaderboard/weaker-prompt/summarization
 </thead>
 <tbody>
 <tr>
-<td class="text-center"><b>Our 70B</b></td>
+<td class="text-center"><b>URA-LLaMa LLaMA70B</b></td>
 <td class="text-center" style="background-color: cyan;">0.49 ± 0.00</td>
 <td class="text-center" style="background-color: cyan;">0.23 ± 0.00</td>
 <td class="text-center" style="background-color: cyan;">0.31 ± 0.00</td>
@@ -51,7 +51,7 @@ permalink: /leaderboard/weaker-prompt/summarization
 <td class="text-center">25.30 ± 1.86</td>
 </tr>
 <tr>
-<td class="text-center"><b>Our 13B</b></td>
+<td class="text-center"><b>URA-LLaMa LLaMA13B</b></td>
 <td class="text-center">0.27 ± 0.00</td>
 <td class="text-center">0.12 ± 0.00</td>
 <td class="text-center">0.18 ± 0.00</td>
@@ -70,7 +70,7 @@ permalink: /leaderboard/weaker-prompt/summarization
 <td class="text-center" style="background-color: cyan;">190.09 ± 4.92</td>
 </tr>
 <tr>
-<td class="text-center"><b>Our 7B</b></td>
+<td class="text-center"><b>URA-LLaMa LLaMA7B</b></td>
 <td class="text-center">0.45 ± 0.00</td>
 <td class="text-center">0.21 ± 0.00</td>
 <td class="text-center">0.29 ± 0.00</td>

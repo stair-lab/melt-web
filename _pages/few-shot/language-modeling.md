@@ -28,7 +28,7 @@ permalink: /leaderboard/few-shot/language-modeling
   </thead>
   <tbody>
     <tr>
-      <td class="text-center"><b>Our 70B</b></td>
+      <td class="text-center"><b>URA-LLaMa 70B</b></td>
       <td class="text-center" style="background-color: cyan;">0.01 ± 0.00</td>
       <td class="text-center">0.54 ± 0.00</td>
       <td class="text-center">0.66 ± 0.00</td>
@@ -43,7 +43,7 @@ permalink: /leaderboard/few-shot/language-modeling
       <td class="text-center">1.13 ± 0.00</td>
     </tr>
     <tr>
-      <td class="text-center"><b>Our 13B</b></td>
+      <td class="text-center"><b>URA-LLaMa 13B</b></td>
       <td class="text-center" style="background-color: cyan;">0.01 ± 0.00</td>
       <td class="text-center">0.45 ± 0.01</td>
       <td class="text-center">0.61 ± 0.01</td>
@@ -58,7 +58,7 @@ permalink: /leaderboard/few-shot/language-modeling
       <td class="text-center">1.15 ± 0.00</td>
     </tr>
     <tr>
-      <td class="text-center"><b>Our 7B</b></td>
+      <td class="text-center"><b>URA-LLaMa 7B</b></td>
       <td class="text-center" style="background-color: cyan;">0.01 ± 0.00</td>
       <td class="text-center" style="background-color: cyan;">0.40 ± 0.01</td>
       <td class="text-center" style="background-color: cyan;">0.55 ± 0.01</td>

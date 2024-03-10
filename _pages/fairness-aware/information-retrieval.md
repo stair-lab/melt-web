@@ -24,7 +24,7 @@ permalink: /leaderboard/fairness-aware/information-retrieval
   </thead>
   <tbody>
     <tr>
-      <td class="text-center"><b>Our 70B</b></td>
+      <td class="text-center"><b>URA-LLaMa 70B</b></td>
       <td class="text-center"></td>
       <td class="text-center"></td>
       <td class="text-center"></td>
@@ -35,7 +35,7 @@ permalink: /leaderboard/fairness-aware/information-retrieval
       <td class="text-center"></td>
     </tr>
     <tr>
-      <td class="text-center"><b>Our 13B</b></td>
+      <td class="text-center"><b>URA-LLaMa 13B</b></td>
       <td class="text-center"></td>
       <td class="text-center"></td>
       <td class="text-center"></td>
@@ -46,7 +46,7 @@ permalink: /leaderboard/fairness-aware/information-retrieval
       <td class="text-center"></td>
     </tr>
     <tr>
-      <td class="text-center"><b>Our 7B</b></td>
+      <td class="text-center"><b>URA-LLaMa 7B</b></td>
       <td class="text-center">0.10 ± 0.00</td>
       <td class="text-center">0.10 ± 0.00</td>
       <td class="text-center">0.14 ± 0.00</td>

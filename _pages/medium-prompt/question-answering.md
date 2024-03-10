@@ -20,21 +20,21 @@ permalink: /leaderboard/medium-prompt/question-answering
   </thead>
   <tbody>
     <tr>
-      <td class="text-center"><b>Our 70B</b></td>
+      <td class="text-center"><b>URA-LLaMa 70B</b></td>
       <td class="text-center" style="background-color: cyan;">0.08 ± 0.00</td>
       <td class="text-center" style="background-color: cyan;">0.33 ± 0.00</td>
       <td class="text-center" style="background-color: cyan;">0.07 ± 0.00</td>
       <td class="text-center" style="background-color: cyan;">0.31 ± 0.00</td>
     </tr>
     <tr>
-      <td class="text-center"><b>Our 13B</b></td>
+      <td class="text-center"><b>URA-LLaMa 13B</b></td>
       <td class="text-center">0.04 ± 0.00</td>
       <td class="text-center">0.21 ± 0.00</td>
       <td class="text-center">0.04 ± 0.00</td>
       <td class="text-center">0.19 ± 0.00</td>
     </tr>
     <tr>
-      <td class="text-center"><b>Our 7B</b></td>
+      <td class="text-center"><b>URA-LLaMa 7B</b></td>
       <td class="text-center">0.01 ± 0.00</td>
       <td class="text-center">0.11 ± 0.00</td>
       <td class="text-center">0.01 ± 0.00</td>

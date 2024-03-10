@@ -23,7 +23,7 @@ permalink: /leaderboard/zero-shot/knowledge
 </thead>
 <tbody>
 <tr>
-<td class="text-center"><b>Our 70B</b></td>
+<td class="text-center"><b>URA-LLaMa 70B</b></td>
 <td class="text-center" style="background-color: cyan;">0.28 ± 0.02</td>
 <td class="text-center" style="background-color: cyan;">0.44 ± 0.02</td>
 <td class="text-center" style="background-color: cyan;">0.80 ± 0.02</td>
@@ -33,7 +33,7 @@ permalink: /leaderboard/zero-shot/knowledge
 <td class="text-center" style="background-color: cyan;">0.96 ± 0.03</td>
 </tr>
 <tr>
-<td class="text-center"><b>Our 13B</b></td>
+<td class="text-center"><b>URA-LLaMa 13B</b></td>
 <td class="text-center">0.12 ± 0.01</td>
 <td class="text-center">0.22 ± 0.01</td>
 <td class="text-center">0.40 ± 0.02</td>
@@ -43,7 +43,7 @@ permalink: /leaderboard/zero-shot/knowledge
 <td class="text-center">0.42 ± 0.08</td>
 </tr>
 <tr>
-<td class="text-center"><b>Our 7B</b></td>
+<td class="text-center"><b>URA-LLaMa 7B</b></td>
 <td class="text-center">0.09 ± 0.01</td>
 <td class="text-center">0.20 ± 0.02</td>
 <td class="text-center">0.30 ± 0.02</td>

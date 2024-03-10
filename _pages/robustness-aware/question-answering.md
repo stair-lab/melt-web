@@ -20,21 +20,21 @@ permalink: /leaderboard/robustness-aware/question-answering
   </thead>
   <tbody>
     <tr>
-      <td class="text-center"><b>Our 70B</b></td>
+      <td class="text-center"><b>URA-LLaMa 70B</b></td>
       <td class="text-center" style="background-color: cyan;">0.01 ± 0.00</td>
       <td class="text-center" style="background-color: cyan;">0.17 ± 0.00</td>
       <td class="text-center" style="background-color: cyan;">0.01 ± 0.00</td>
       <td class="text-center" style="background-color: cyan;">0.18 ± 0.00</td>
     </tr>
     <tr>
-      <td class="text-center"><b>Our 13B</b></td>
+      <td class="text-center"><b>URA-LLaMa 13B</b></td>
       <td class="text-center">0.00 ± 0.00</td>
       <td class="text-center">0.09 ± 0.00</td>
       <td class="text-center">0.00 ± 0.00</td>
       <td class="text-center">0.10 ± 0.00</td>
     </tr>
     <tr>
-      <td class="text-center"><b>Our 7B</b></td>
+      <td class="text-center"><b>URA-LLaMa 7B</b></td>
       <td class="text-center">0.00 ± 0.00</td>
       <td class="text-center">0.09 ± 0.00</td>
       <td class="text-center">0.00 ± 0.00</td>

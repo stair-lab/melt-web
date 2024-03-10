@@ -26,7 +26,7 @@ permalink: /leaderboard/fairness-aware/toxicity-detection
     </thead>
     <tbody>
         <tr>
-            <td class="text-center"><b>Our 70B</b></td>
+            <td class="text-center"><b>URA-LLaMa 70B</b></td>
             <td class="text-center">0.41 ± 0.02</td>
             <td class="text-center">0.26 ± 0.01</td>
             <td class="text-center" style="background-color: cyan;">0.75 ± 0.01</td>
@@ -39,7 +39,7 @@ permalink: /leaderboard/fairness-aware/toxicity-detection
             <td class="text-center">0.24 ± 0.02</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 13B</b></td>
+            <td class="text-center"><b>URA-LLaMa 13B</b></td>
             <td class="text-center" style="background-color: cyan;">0.43 ± 0.02</td>
             <td class="text-center">0.29 ± 0.07</td>
             <td class="text-center">0.66 ± 0.01</td>
@@ -52,7 +52,7 @@ permalink: /leaderboard/fairness-aware/toxicity-detection
             <td class="text-center">0.21 ± 0.02</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 7B</b></td>
+            <td class="text-center"><b>URA-LLaMa 7B</b></td>
             <td class="text-center">0.42 ± 0.02</td>
             <td class="text-center" style="background-color: cyan;">0.39 ± 0.01</td>
             <td class="text-center">0.60 ± 0.01</td>

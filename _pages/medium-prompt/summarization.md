@@ -32,7 +32,7 @@ permalink: /leaderboard/medium-prompt/summarization
 </thead>
 <tbody>
 <tr>
-<td class="text-center"><b>Our 70B</b></td>
+<td class="text-center"><b>URA-LLaMa 70B</b></td>
 <td class="text-center">0.35 ± 0.00</td>
 <td class="text-center">0.16 ± 0.00</td>
 <td class="text-center">0.24 ± 0.00</td>
@@ -51,7 +51,7 @@ permalink: /leaderboard/medium-prompt/summarization
 <td class="text-center">56.56 ± 1.70</td>
 </tr>
 <tr>
-<td class="text-center"><b>Our 13B</b></td>
+<td class="text-center"><b>URA-LLaMa 13B</b></td>
 <td class="text-center">0.26 ± 0.00</td>
 <td class="text-center">0.12 ± 0.00</td>
 <td class="text-center">0.17 ± 0.00</td>
@@ -70,7 +70,7 @@ permalink: /leaderboard/medium-prompt/summarization
 <td class="text-center" style="background-color: cyan;">60.10 ± 2.16</td>
 </tr>
 <tr>
-<td class="text-center"><b>Our 7B</b></td>
+<td class="text-center"><b>URA-LLaMa 7B</b></td>
 <td class="text-center" style="background-color: cyan;">0.41 ± 0.00</td>
 <td class="text-center" style="background-color: cyan;">0.18 ± 0.00</td>
 <td class="text-center" style="background-color: cyan;">0.27 ± 0.00</td>

@@ -26,7 +26,7 @@ permalink: /leaderboard/zero-shot/sentiment-analysis
   </thead>
   <tbody>
     <tr>
-      <td class="text-center"><b>Our 70B</b></td>
+      <td class="text-center"><b>URA-LLaMa 70B</b></td>
       <td class="text-center" style="background-color: cyan;">0.63 ± 0.02</td>
       <td class="text-center" style="background-color: cyan;">0.63 ± 0.02</td>
       <td class="text-center" style="background-color: cyan;">0.74 ± 0.01</td>
@@ -39,7 +39,7 @@ permalink: /leaderboard/zero-shot/sentiment-analysis
       <td class="text-center" style="background-color: cyan;">0.98 ± 0.01</td>
     </tr>
     <tr>
-      <td class="text-center"><b>Our 13B</b></td>
+      <td class="text-center"><b>URA-LLaMa 13B</b></td>
       <td class="text-center">0.52 ± 0.02</td>
       <td class="text-center">0.35 ± 0.01</td>
       <td class="text-center">0.60 ± 0.01</td>
@@ -52,7 +52,7 @@ permalink: /leaderboard/zero-shot/sentiment-analysis
       <td class="text-center">0.95 ± 0.01</td>
     </tr>
     <tr>
-      <td class="text-center"><b>Our 7B</b></td>
+      <td class="text-center"><b>URA-LLaMa 7B</b></td>
       <td class="text-center">0.35 ± 0.02</td>
       <td class="text-center">0.24 ± 0.01</td>
       <td class="text-center">0.54 ± 0.01</td>

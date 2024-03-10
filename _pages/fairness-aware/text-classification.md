@@ -26,7 +26,7 @@ permalink: /leaderboard/fairness-aware/text-classification
   </thead>
   <tbody>
     <tr>
-      <td class="text-center"><b>Our 70B</b></td>
+      <td class="text-center"><b>URA-LLaMa LLaMA70B</b></td>
       <td class="text-center">0.24 ± 0.02</td>
       <td class="text-center" style="background-color: cyan;">0.14 ± 0.01</td>
       <td class="text-center">0.58 ± 0.01</td>
@@ -39,7 +39,7 @@ permalink: /leaderboard/fairness-aware/text-classification
       <td class="text-center" style="background-color: cyan;">0.13 ± 0.04</td>
     </tr>
     <tr>
-      <td class="text-center"><b>Our 13B</b></td>
+      <td class="text-center"><b>URA-LLaMa LLaMA13B</b></td>
       <td class="text-center" style="background-color: cyan;">0.31 ± 0.02</td>
       <td class="text-center">0.11 ± 0.01</td>
       <td class="text-center">0.58 ± 0.01</td>
@@ -52,7 +52,7 @@ permalink: /leaderboard/fairness-aware/text-classification
       <td class="text-center">0.00 ± 0.01</td>
     </tr>
     <tr>
-      <td class="text-center"><b>Our 7B</b></td>
+      <td class="text-center"><b>URA-LLaMa LLaMA7B</b></td>
       <td class="text-center">0.29 ± 0.02</td>
       <td class="text-center">0.11 ± 0.01</td>
       <td class="text-center" style="background-color: cyan;">0.60 ± 0.01</td>

@@ -26,7 +26,7 @@ permalink: /leaderboard/zero-shot/reasoning
   </thead>
   <tbody>
     <tr>
-      <td class="text-center"><b>Our 70B</b></td>
+      <td class="text-center"><b>URA-LLaMa 70B</b></td>
       <td class="text-center" style="background-color: cyan;">0.06 ± 0.00</td>
       <td class="text-center" style="background-color: cyan;">0.34 ± 0.00</td>
       <td class="text-center" style="background-color: cyan;">0.06 ± 0.00</td>
@@ -38,7 +38,7 @@ permalink: /leaderboard/zero-shot/reasoning
       <td class="text-center" style="background-color: cyan;">0.24 ± 0.02</td>
     </tr>
     <tr>
-      <td class="text-center"><b>Our 13B</b></td>
+      <td class="text-center"><b>URA-LLaMa 13B</b></td>
       <td class="text-center">0.01 ± 0.00</td>
       <td class="text-center">0.31 ± 0.00</td>
       <td class="text-center">0.02 ± 0.00</td>
@@ -50,7 +50,7 @@ permalink: /leaderboard/zero-shot/reasoning
       <td class="text-center">0.14 ± 0.02</td>
     </tr>
     <tr>
-      <td class="text-center"><b>Our 7B</b></td>
+      <td class="text-center"><b>URA-LLaMa 7B</b></td>
       <td class="text-center">0.00 ± 0.00</td>
       <td class="text-center">0.26 ± 0.00</td>
       <td class="text-center">0.00 ± 0.00</td>

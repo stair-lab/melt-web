@@ -26,7 +26,7 @@ permalink: /leaderboard/few-shot/reasoning
     </thead>
     <tbody>
         <tr>
-            <td class="text-center"><b>Our 70B</b></td>
+            <td class="text-center"><b>URA-LLaMa 70B</b></td>
             <td class="text-center" style="background-color: cyan;">0.14 ± 0.00</td>
             <td class="text-center" style="background-color: cyan;">0.48 ± 0.00</td>
             <td class="text-center" style="background-color: cyan;">0.15 ± 0.00</td>
@@ -38,7 +38,7 @@ permalink: /leaderboard/few-shot/reasoning
             <td class="text-center">0.12 ± 0.02</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 13B</b></td>
+            <td class="text-center"><b>URA-LLaMa 13B</b></td>
             <td class="text-center">0.08 ± 0.00</td>
             <td class="text-center">0.42 ± 0.00</td>
             <td class="text-center">0.08 ± 0.00</td>
@@ -50,7 +50,7 @@ permalink: /leaderboard/few-shot/reasoning
             <td class="text-center">0.00 ± 0.01</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 7B</b></td>
+            <td class="text-center"><b>URA-LLaMa 7B</b></td>
             <td class="text-center">0.04 ± 0.00</td>
             <td class="text-center">0.38 ± 0.00</td>
             <td class="text-center">0.04 ± 0.00</td>

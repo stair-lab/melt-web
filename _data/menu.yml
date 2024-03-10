@@ -1,14 +1,14 @@
 - title: Home
-  link: /
+  link: "/"
 
 - title: GitHub
-  link: https://github.com/koyejo-lab/villm
+  link: "https://github.com/koyejo-lab/villm"
 
 - title: HuggingFace
-  link: https://huggingface.co/ura-hcmut
+  link: "https://huggingface.co/ura-hcmut"
 
 - title: Paper
-  link: https://arxiv.org/abs/2403.02715
+  link: "https://arxiv.org/abs/2403.02715"
 
 - title: Prompt
   link: "/prompt/"

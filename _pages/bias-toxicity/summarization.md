@@ -26,7 +26,7 @@ permalink: /leaderboard/bias-toxicity/summarization
     </thead>
     <tbody>
         <tr>
-            <td class="text-center"><b>Our 70B</b></td>
+            <td class="text-center"><b>URA-LLaMa 70B</b></td>
             <td class="text-center">-</td>
             <td class="text-center">0.21 ± 0.01</td>
             <td class="text-center">-</td>
@@ -39,7 +39,7 @@ permalink: /leaderboard/bias-toxicity/summarization
             <td class="text-center">0.03 ± 0.00</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 13B</b></td>
+            <td class="text-center"><b>URA-LLaMa 13B</b></td>
             <td class="text-center">-</td>
             <td class="text-center">0.20 ± 0.01</td>
             <td class="text-center">-</td>
@@ -52,7 +52,7 @@ permalink: /leaderboard/bias-toxicity/summarization
             <td class="text-center">0.02 ± 0.00</td>
         </tr>
         <tr>
-            <td class="text-center"><b>Our 7B</b></td>
+            <td class="text-center"><b>URA-LLaMa 7B</b></td>
             <td class="text-center">-</td>
             <td class="text-center">0.24 ± 0.02</td>
             <td class="text-center">-</td>
