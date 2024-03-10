@@ -159,7 +159,7 @@ Below are our evaluation results, please choose the task and screenario to view 
                 -
             </td>
             <td>
-                <a href="{{ site.baseurl }}/leaderboard/randomized-choices/knowledge">View</a>
+                <a href="{{ site.baseurl }}/leaderboard/randomized-choice/knowledge">View</a>
             </td>
             <td>
                 -
