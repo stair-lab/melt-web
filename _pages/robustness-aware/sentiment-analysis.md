@@ -26,7 +26,7 @@ permalink: /leaderboard/robustness-aware/sentiment-analysis
     </thead>
     <tbody>
         <tr>
-            <td class="text-center"><b>URA-LLaMa LLaMA70B</b></td>
+            <td class="text-center"><b>URA-LLaMa 70B</b></td>
             <td class="text-center" style="background-color: cyan;">0.63 ± 0.01</td>
             <td class="text-center">0.48 ± 0.01</td>
             <td class="text-center" style="background-color: cyan;">0.60 ± 0.01</td>
@@ -39,7 +39,7 @@ permalink: /leaderboard/robustness-aware/sentiment-analysis
             <td class="text-center" style="background-color: cyan;">0.99 ± 0.01</td>
         </tr>
         <tr>
-            <td class="text-center"><b>URA-LLaMa LLaMA13B</b></td>
+            <td class="text-center"><b>URA-LLaMa 13B</b></td>
             <td class="text-center">0.55 ± 0.02</td>
             <td class="text-center" style="background-color: cyan;">0.52 ± 0.02</td>
             <td class="text-center">0.59 ± 0.01</td>
@@ -52,7 +52,7 @@ permalink: /leaderboard/robustness-aware/sentiment-analysis
             <td class="text-center">0.77 ± 0.02</td>
         </tr>
         <tr>
-            <td class="text-center"><b>URA-LLaMa LLaMA7B</b></td>
+            <td class="text-center"><b>URA-LLaMa 7B</b></td>
             <td class="text-center">0.52 ± 0.02</td>
             <td class="text-center">0.36 ± 0.03</td>
             <td class="text-center">0.59 ± 0.01</td>

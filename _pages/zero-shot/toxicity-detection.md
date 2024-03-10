@@ -26,7 +26,7 @@ permalink: /leaderboard/zero-shot/toxicity-detection
   </thead>
   <tbody>
     <tr>
-      <td class="text-center"><b>URA-LLaMa LLaMA70B</b></td>
+      <td class="text-center"><b>URA-LLaMa 70B</b></td>
       <td class="text-center" style="background-color: cyan;">0.61 ± 0.01</td>
       <td class="text-center" style="background-color: cyan;">0.52 ± 0.01</td>
       <td class="text-center" style="background-color: cyan;">0.77 ± 0.01</td>
@@ -39,7 +39,7 @@ permalink: /leaderboard/zero-shot/toxicity-detection
       <td class="text-center" style="background-color: cyan;">0.91 ± 0.01</td>
     </tr>
     <tr>
-      <td class="text-center"><b>URA-LLaMa LLaMA13B</b></td>
+      <td class="text-center"><b>URA-LLaMa 13B</b></td>
       <td class="text-center">0.46 ± 0.01</td>
       <td class="text-center">0.28 ± 0.03</td>
       <td class="text-center">0.53 ± 0.02</td>
@@ -52,7 +52,7 @@ permalink: /leaderboard/zero-shot/toxicity-detection
       <td class="text-center">0.54 ± 0.02</td>
     </tr>
     <tr>
-      <td class="text-center"><b>URA-LLaMa LLaMA7B</b></td>
+      <td class="text-center"><b>URA-LLaMa 7B</b></td>
       <td class="text-center">0.25 ± 0.01</td>
       <td class="text-center">0.19 ± 0.01</td>
       <td class="text-center">0.53 ± 0.01</td>
