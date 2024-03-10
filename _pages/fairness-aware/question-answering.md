@@ -1,8 +1,8 @@
 ---
 layout: default
-permalink: /leaderboard/zero-shot/question-answering
+permalink: /leaderboard/fairness-aware/question-answering
 ---
-# Zero-Shot Question Answering Leaderboard
+# Fairness-Aware Question Answering Leaderboard
 
 <table class="table table-bordered table-sm w-100 dtHorizontalTable" cellspacing="0">
     <thead>
@@ -12,68 +12,68 @@ permalink: /leaderboard/zero-shot/question-answering
             <th colspan="2" class="text-center"><b>MLQA</b></th>
         </tr>
         <tr>
-            <th class="text-center"><b>EM<span style="vertical-align: super;">↑</span></b></th>
+            <th class="text-center"><b>Exact Match<span style="vertical-align: super;">↑</span></b></th>
             <th class="text-center"><b>F1<span style="vertical-align: super;">↑</span></b></th>
-            <th class="text-center"><b>EM<span style="vertical-align: super;">↑</span></b></th>
+            <th class="text-center"><b>Exact Match<span style="vertical-align: super;">↑</span></b></th>
             <th class="text-center"><b>F1<span style="vertical-align: super;">↑</span></b></th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td class="text-center" style="background-color: cyan;">Our 70B</td>
-            <td class="text-center" style="background-color: cyan;">0.06 ± 0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.30 ± 0.00</td>
+            <td class="text-center"><b>Our 70B</b></td>
             <td class="text-center" style="background-color: cyan;">0.04 ± 0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.28 ± 0.00</td>
+            <td class="text-center" style="background-color: cyan;">0.27 ± 0.00</td>
+            <td class="text-center" style="background-color: cyan;">0.03 ± 0.00</td>
+            <td class="text-center" style="background-color: cyan;">0.25 ± 0.00</td>
         </tr>
         <tr>
-            <td class="text-center">Our 13B</td>
+            <td class="text-center"><b>Our 13B</b></td>
+            <td class="text-center">0.00 ± 0.00</td>
+            <td class="text-center">0.13 ± 0.00</td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.14 ± 0.00</td>
-            <td class="text-center">0.00 ± 0.00</td>
-            <td class="text-center">0.15 ± 0.00</td>
         </tr>
         <tr>
-            <td class="text-center">Our 7B</td>
+            <td class="text-center"><b>Our 7B</b></td>
             <td class="text-center">0.00 ± 0.00</td>
-            <td class="text-center">0.14 ± 0.00</td>
+            <td class="text-center">0.13 ± 0.00</td>
             <td class="text-center">0.00 ± 0.00</td>
-            <td class="text-center">0.16 ± 0.00</td>
+            <td class="text-center">0.15 ± 0.01</td>
         </tr>
         <tr>
-            <td class="text-center">LLaMa-2 13B</td>
+            <td class="text-center"><b>LLaMa-2 13B</b></td>
+            <td class="text-center">0.00 ± 0.00</td>
+            <td class="text-center">0.03 ± 0.00</td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.04 ± 0.00</td>
-            <td class="text-center" style="background-color: #f0f0f0;">0.00 ± 0.02</td>
+        </tr>
+        <tr>
+            <td class="text-center"><b>LLaMa-2 7B</b></td>
+            <td class="text-center">0.00 ± 0.00</td>
+            <td class="text-center">0.04 ± 0.00</td>
+            <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.05 ± 0.00</td>
         </tr>
         <tr>
-            <td class="text-center">LLaMa-2 7B</td>
-            <td class="text-center">0.00 ± 0.00</td>
-            <td class="text-center">0.05 ± 0.00</td>
-            <td class="text-center">0.00 ± 0.00</td>
-            <td class="text-center">0.06 ± 0.00</td>
-        </tr>
-        <tr>
-            <td class="text-center">Vietcuna 7B</td>
+            <td class="text-center"><b>Vietcuna 7B</b></td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.00 ± 0.00</td>
         </tr>
         <tr>
-            <td class="text-center">GPT-3.5</td>
+            <td class="text-center"><b>GPT-3.5</b></td>
             <td class="text-center">0.00 ± 0.00</td>
             <td class="text-center">0.24 ± 0.00</td>
             <td class="text-center">0.00 ± 0.00</td>
-            <td class="text-center">0.25 ± 0.00</td>
+            <td class="text-center">0.23 ± 0.00</td>
         </tr>
         <tr>
-            <td class="text-center">GPT-4</td>
+            <td class="text-center"><b>GPT-4</b></td>
             <td class="text-center">0.00 ± 0.00</td>
-            <td class="text-center" style="background-color: #f0f0f0;">0.27 ± 0.00</td>
+            <td class="text-center" style="background-color: #f0f0f0;">0.26 ± 0.00</td>
             <td class="text-center">0.00 ± 0.00</td>
-            <td class="text-center" style="background-color: #f0f0f0;">0.27 ± 0.00</td>
+            <td class="text-center" style="background-color: #f0f0f0;">0.24 ± 0.00</td>
         </tr>
     </tbody>
 </table>
