@@ -1,6 +1,9 @@
 - title: Home
   link: "/"
 
+- title: Leaderboard
+  link: "/leaderboard/"
+
 - title: GitHub
   link: "https://github.com/koyejo-lab/villm"
 
@@ -15,6 +18,3 @@
 
 - title: Demo
   link: "/demo/"
-
-- title: Leaderboard
-  link: "/leaderboard/"
