@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta name="description" content="Multilingual Evaluation Toolkits" />
+  <meta name="author" content="" />
+
+  <title>MELT</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://ai.stanford.edu/~sttruong/melt/assets/css/main.css" rel="stylesheet" />
+</head>
+
+
+<body>
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark py-3">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger font-weight-bold" href="https://ai.stanford.edu/~sttruong/melt/">
+      MELT
+    </a>
+    <button
+      class="navbar-toggler ml-auto"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="https://ai.stanford.edu/~sttruong/melt/">Home</a>
+        </li>
+        
+        <li class="nav-item active  ">
+          <a class="nav-link" href="https://ai.stanford.edu/~sttruong/melt/leaderboard/">Leaderboard</a>
+        </li>
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="https://github.com/stair-lab/melt">GitHub</a>
+        </li>
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="https://huggingface.co/ura-hcmut">HuggingFace</a>
+        </li>
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="https://arxiv.org/abs/2403.02715">Paper</a>
+        </li>
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="https://ai.stanford.edu/~sttruong/melt/prompt/">Prompt</a>
+        </li>
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="https://ai.stanford.edu/~sttruong/melt/demo/">Demo</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+ <!-- Header -->
+<header class="bg-primary py-5 my-5">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-lg-12">
+        <h1 class="display-3 text-white mt-5 mb-2 text-center font-weight-bold">
+          Multilingual Evaluation Toolkits
+        </h1>
+        <!-- <h3 class="mb-5 text-white text-center">
+          Finetuning and Comprehensive Evaluation of Vietnamese Large Language Models
+        </h3> -->
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Page Content -->
+  <div class="container my-5">
+    <h1 id="few-shot-text-classification-leaderboard">Few-Shot Text Classification Leaderboard</h1>
+
+<table class="table table-bordered table-sm w-100 dtHorizontalTable" cellspacing="0">
+<thead>
+<tr>
+<th rowspan="2" class="text-center align-middle"><b>Models</b></th>
+<th colspan="5" class="text-center"><b>UiT-VSMEC</b></th>
+<th colspan="5" class="text-center"><b>PhoATIS</b></th>
+</tr>
+<tr>
+<th class="text-center"><b>AC<span style="vertical-align: super;">↑</span></b></th>
+<th class="text-center"><b>F1<span style="vertical-align: super;">↑</span></b></th>
+<th class="text-center"><b>AR<span style="vertical-align: super;">↑</span></b></th>
+<th class="text-center"><b>ECE<span style="vertical-align: super;">↓</span></b></th>
+<th class="text-center"><b>A@10<span style="vertical-align: super;">↑</span></b></th>
+<th class="text-center"><b>AC<span style="vertical-align: super;">↑</span></b></th>
+<th class="text-center"><b>F1<span style="vertical-align: super;">↑</span></b></th>
+<th class="text-center"><b>AR<span style="vertical-align: super;">↑</span></b></th>
+<th class="text-center"><b>ECE<span style="vertical-align: super;">↓</span></b></th>
+<th class="text-center"><b>A@10<span style="vertical-align: super;">↑</span></b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-center"><b>URA-LLaMa 70B</b></td>
+<td class="text-center">0.25 ± 0.02</td>
+<td class="text-center" style="background-color: cyan;">0.15 ± 0.01</td>
+<td class="text-center">0.56 ± 0.01</td>
+<td class="text-center">0.25 ± 0.02</td>
+<td class="text-center">0.37 ± 0.06</td>
+<td class="text-center" style="background-color: cyan;">0.15 ± 0.01</td>
+<td class="text-center" style="background-color: cyan;">0.22 ± 0.03</td>
+<td class="text-center" style="background-color: cyan;">0.83 ± 0.00</td>
+<td class="text-center">0.81 ± 0.01</td>
+<td class="text-center" style="background-color: cyan;">0.13 ± 0.04</td>
+</tr>
+<tr>
+<td class="text-center"><b>URA-LLaMa 13B</b></td>
+<td class="text-center" style="background-color: cyan;">0.32 ± 0.02</td>
+<td class="text-center">0.12 ± 0.01</td>
+<td class="text-center">0.58 ± 0.01</td>
+<td class="text-center">0.22 ± 0.02</td>
+<td class="text-center" style="background-color: cyan;">0.57 ± 0.07</td>
+<td class="text-center">0.01 ± 0.01</td>
+<td class="text-center">0.06 ± 0.02</td>
+<td class="text-center">0.47 ± 0.00</td>
+<td class="text-center">0.84 ± 0.01</td>
+<td class="text-center">0.00 ± 0.01</td>
+</tr>
+<tr>
+<td class="text-center"><b>URA-LLaMa 7B</b></td>
+<td class="text-center">0.29 ± 0.02</td>
+<td class="text-center">0.11 ± 0.01</td>
+<td class="text-center" style="background-color: cyan;">0.60 ± 0.01</td>
+<td class="text-center" style="background-color: cyan;">0.12 ± 0.02</td>
+<td class="text-center">0.43 ± 0.06</td>
+<td class="text-center">0.06 ± 0.01</td>
+<td class="text-center">0.01 ± 0.00</td>
+<td class="text-center">0.55 ± 0.00</td>
+<td class="text-center">0.24 ± 0.01</td>
+<td class="text-center">0.08 ± 0.03</td>
+</tr>
+<tr>
+<td class="text-center"><b>LLaMa-2 13B</b></td>
+<td class="text-center">0.18 ± 0.02</td>
+<td class="text-center">0.08 ± 0.01</td>
+<td class="text-center">0.55 ± 0.01</td>
+<td class="text-center">0.45 ± 0.01</td>
+<td class="text-center">0.49 ± 0.07</td>
+<td class="text-center">0.02 ± 0.01</td>
+<td class="text-center">0.06 ± 0.02</td>
+<td class="text-center">0.57 ± 0.01</td>
+<td class="text-center">0.90 ± 0.01</td>
+<td class="text-center">0.01 ± 0.01</td>
+</tr>
+<tr>
+<td class="text-center"><b>LLaMa-2 7B</b></td>
+<td class="text-center">0.25 ± 0.02</td>
+<td class="text-center">0.12 ± 0.01</td>
+<td class="text-center">0.57 ± 0.01</td>
+<td class="text-center">0.21 ± 0.02</td>
+<td class="text-center">0.54 ± 0.06</td>
+<td class="text-center">0.03 ± 0.01</td>
+<td class="text-center">0.02 ± 0.01</td>
+<td class="text-center">0.56 ± 0.01</td>
+<td class="text-center">0.54 ± 0.01</td>
+<td class="text-center">0.01 ± 0.01</td>
+</tr>
+<tr>
+<td class="text-center"><b>Vietcuna 7B</b></td>
+<td class="text-center">0.15 ± 0.01</td>
+<td class="text-center">0.05 ± 0.01</td>
+<td class="text-center">0.46 ± 0.01</td>
+<td class="text-center">0.85 ± 0.01</td>
+<td class="text-center">0.15 ± 0.04</td>
+<td class="text-center">0.04 ± 0.01</td>
+<td class="text-center">0.01 ± 0.00</td>
+<td class="text-center">0.63 ± 0.00</td>
+<td class="text-center" style="background-color: cyan;">0.21 ± 0.01</td>
+<td class="text-center">0.07 ± 0.03</td>
+</tr>
+<tr>
+<td class="text-center"><b>MixSUra 8x7B</b></td>
+<td class="text-center">0.40 ± -</td>
+<td class="text-center">0.36 ± -</td>
+<td class="text-center">0.72 ± -</td>
+<td class="text-center">0.53 ± -</td>
+<td class="text-center">0.79 ± -</td>
+<td class="text-center">0.81 ± -</td>
+<td class="text-center">0.58 ± -</td>
+<td class="text-center">0.96 ± -</td>
+<td class="text-center">0.14 ± -</td>
+<td class="text-center">0.91 ± -</td>
+</tr>
+<tr>
+<td class="text-center"><b>GPT-3.5</b></td>
+<td class="text-center">0.42 ± 0.02</td>
+<td class="text-center">0.40 ± 0.02</td>
+<td class="text-center">-</td>
+<td class="text-center" style="background-color: #f0f0f0;">0.28 ± 0.02</td>
+<td class="text-center">0.42 ± 0.06</td>
+<td class="text-center">0.69 ± 0.02</td>
+<td class="text-center">0.67 ± 0.03</td>
+<td class="text-center">-</td>
+<td class="text-center" style="background-color: #f0f0f0;">0.63 ± 0.02</td>
+<td class="text-center">0.69 ± 0.05</td>
+</tr>
+<tr>
+<td class="text-center"><b>GPT-4</b></td>
+<td class="text-center" style="background-color: #f0f0f0;">0.49 ± 0.02</td>
+<td class="text-center" style="background-color: #f0f0f0;">0.48 ± 0.02</td>
+<td class="text-center">-</td>
+<td class="text-center">0.35 ± 0.02</td>
+<td class="text-center" style="background-color: #f0f0f0;">0.49 ± 0.06</td>
+<td class="text-center" style="background-color: #f0f0f0;">0.85 ± 0.01</td>
+<td class="text-center" style="background-color: #f0f0f0;">0.78 ± 0.03</td>
+<td class="text-center">-</td>
+<td class="text-center">0.79 ± 0.01</td>
+<td class="text-center" style="background-color: #f0f0f0;">0.88 ± 0.04</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+  <!-- /.container -->
+  <!-- Footer -->
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">
+      Copyright &copy; MELT @ 2024
+    </p>
+  </div>
+  <!-- /.container -->
+</footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://ai.stanford.edu/~sttruong/melt/assets/vendor/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ai.stanford.edu/~sttruong/melt/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="https://ai.stanford.edu/~sttruong/melt/assets/vendor/dataTables/dataTables.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://ai.stanford.edu/~sttruong/melt/assets/vendor/dataTables/dataTables.bootstrap4.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://ai.stanford.edu/~sttruong/melt/assets/vendor/dataTables/dataTables.fixedColumns.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://ai.stanford.edu/~sttruong/melt/assets/vendor/dataTables/fixedColumns.dataTables.js" type="text/javascript"></script>
+
+  <!-- Custom scripts for this template -->
+  <script type="text/javascript" src="https://ai.stanford.edu/~sttruong/melt/assets/js/main.js"></script>
+</body>
+
+</html>

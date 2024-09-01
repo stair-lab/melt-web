@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta name="description" content="Multilingual Evaluation Toolkits" />
+  <meta name="author" content="" />
+
+  <title>MELT</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://ai.stanford.edu/~sttruong/melt/assets/css/main.css" rel="stylesheet" />
+</head>
+
+
+<body>
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark py-3">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger font-weight-bold" href="https://ai.stanford.edu/~sttruong/melt/">
+      MELT
+    </a>
+    <button
+      class="navbar-toggler ml-auto"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="https://ai.stanford.edu/~sttruong/melt/">Home</a>
+        </li>
+        
+        <li class="nav-item active  ">
+          <a class="nav-link" href="https://ai.stanford.edu/~sttruong/melt/leaderboard/">Leaderboard</a>
+        </li>
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="https://github.com/stair-lab/melt">GitHub</a>
+        </li>
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="https://huggingface.co/ura-hcmut">HuggingFace</a>
+        </li>
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="https://arxiv.org/abs/2403.02715">Paper</a>
+        </li>
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="https://ai.stanford.edu/~sttruong/melt/prompt/">Prompt</a>
+        </li>
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="https://ai.stanford.edu/~sttruong/melt/demo/">Demo</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+ <!-- Header -->
+<header class="bg-primary py-5 my-5">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-lg-12">
+        <h1 class="display-3 text-white mt-5 mb-2 text-center font-weight-bold">
+          Multilingual Evaluation Toolkits
+        </h1>
+        <!-- <h3 class="mb-5 text-white text-center">
+          Finetuning and Comprehensive Evaluation of Vietnamese Large Language Models
+        </h3> -->
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Page Content -->
+  <div class="container my-5">
+    <h1 id="fairness-aware-language-modeling-leaderboard">Fairness-Aware Language Modeling Leaderboard</h1>
+
+<table class="table table-bordered table-sm w-100 dtHorizontalTable" cellspacing="0">
+  <thead>
+    <tr>
+      <th rowspan="2" class="text-center align-middle"><b>Models</b></th>
+      <th colspan="6" class="text-center"><b>MLQA-MLM</b></th>
+      <th colspan="6" class="text-center"><b>VSEC</b></th>
+    </tr>
+    <tr>
+      <th class="text-center"><b>EM<span style="vertical-align: super;">↑</span></b></th>
+      <th class="text-center"><b>CER<span style="vertical-align: super;">↓</span></b></th>
+      <th class="text-center"><b>WER<span style="vertical-align: super;">↓</span></b></th>
+      <th class="text-center"><b>CED<span style="vertical-align: super;">↓</span></b></th>
+      <th class="text-center"><b>WED<span style="vertical-align: super;">↓</span></b></th>
+      <th class="text-center"><b>PLX<span style="vertical-align: super;">↓</span></b></th>
+      <th class="text-center"><b>EM<span style="vertical-align: super;">↑</span></b></th>
+      <th class="text-center"><b>CER<span style="vertical-align: super;">↓</span></b></th>
+      <th class="text-center"><b>WER<span style="vertical-align: super;">↓</span></b></th>
+      <th class="text-center"><b>CED<span style="vertical-align: super;">↓</span></b></th>
+      <th class="text-center"><b>WED<span style="vertical-align: super;">↓</span></b></th>
+      <th class="text-center"><b>PLX<span style="vertical-align: super;">↓</span></b></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">URA-LLaMa 70B</td>
+      <td class="text-center">0.01 ± 0.00</td>
+      <td class="text-center">0.58 ± 0.01</td>
+      <td class="text-center">0.70 ± 0.01</td>
+      <td class="text-center">653.57 ± 12.05</td>
+      <td class="text-center">150.64 ± 2.73</td>
+      <td class="text-center">1.25 ± 0.06</td>
+      <td class="text-center">0.30 ± 0.00</td>
+      <td class="text-center">0.11 ± 0.00</td>
+      <td class="text-center" style="background-color: cyan;">0.14 ± 0.00</td>
+      <td class="text-center">15.19 ± 0.42</td>
+      <td class="text-center">4.12 ± 0.11</td>
+      <td class="text-center">1.13 ± 0.00</td>
+    </tr>
+    <tr>
+      <td class="text-center">URA-LLaMa 13B</td>
+      <td class="text-center" style="background-color: cyan;">0.02 ± 0.00</td>
+      <td class="text-center" style="background-color: cyan;">0.40 ± 0.01</td>
+      <td class="text-center">0.56 ± 0.01</td>
+      <td class="text-center">518.38 ± 11.19</td>
+      <td class="text-center">125.24 ± 2.66</td>
+      <td class="text-center">1.48 ± 0.11</td>
+      <td class="text-center" style="background-color: cyan;">0.32 ± 0.00</td>
+      <td class="text-center" style="background-color: cyan;">0.07 ± 0.00</td>
+      <td class="text-center">0.21 ± 0.00</td>
+      <td class="text-center" style="background-color: cyan;">2.98 ± 0.11</td>
+      <td class="text-center" style="background-color: cyan;">1.24 ± 0.03</td>
+      <td class="text-center">1.15 ± 0.00</td>
+    </tr>
+    <tr>
+      <td class="text-center">URA-LLaMa 7B</td>
+      <td class="text-center">0.01 ± 0.00</td>
+      <td class="text-center" style="background-color: cyan;">0.40 ± 0.01</td>
+      <td class="text-center" style="background-color: cyan;">0.55 ± 0.01</td>
+      <td class="text-center" style="background-color: cyan;">492.93 ± 11.32</td>
+      <td class="text-center" style="background-color: cyan;">117.82 ± 2.72</td>
+      <td class="text-center" style="background-color: cyan;">1.22 ± 0.01</td>
+      <td class="text-center">0.20 ± 0.00</td>
+      <td class="text-center">0.54 ± 0.01</td>
+      <td class="text-center">0.67 ± 0.01</td>
+      <td class="text-center">41.77 ± 1.57</td>
+      <td class="text-center">10.12 ± 0.35</td>
+      <td class="text-center">1.07 ± 0.00</td>
+    </tr>
+    <tr>
+      <td class="text-center">LLaMa-2 13B</td>
+      <td class="text-center">0.01 ± 0.00</td>
+      <td class="text-center">0.76 ± 0.00</td>
+      <td class="text-center">0.89 ± 0.00</td>
+      <td class="text-center">782.03 ± 11.71</td>
+      <td class="text-center">192.66 ± 2.83</td>
+      <td class="text-center">1.27 ± 0.04</td>
+      <td class="text-center">0.15 ± 0.00</td>
+      <td class="text-center" style="background-color: cyan;">0.07 ± 0.00</td>
+      <td class="text-center">0.22 ± 0.00</td>
+      <td class="text-center">3.39 ± 0.16</td>
+      <td class="text-center">1.52 ± 0.04</td>
+      <td class="text-center" style="background-color: cyan;">1.01 ± 0.00</td>
+    </tr>
+    <tr>
+      <td class="text-center">LLaMa-2 7B</td>
+      <td class="text-center">0.00 ± 0.00</td>
+      <td class="text-center">0.79 ± 0.00</td>
+      <td class="text-center">0.96 ± 0.00</td>
+      <td class="text-center">761.38 ± 10.65</td>
+      <td class="text-center">197.18 ± 2.66</td>
+      <td class="text-center">1.75 ± 0.20</td>
+      <td class="text-center">0.12 ± 0.00</td>
+      <td class="text-center">0.35 ± 0.01</td>
+      <td class="text-center">0.48 ± 0.01</td>
+      <td class="text-center">47.54 ± 0.85</td>
+      <td class="text-center">11.82 ± 0.19</td>
+      <td class="text-center">1.06 ± 0.00</td>
+    </tr>
+    <tr>
+      <td class="text-center">Vietcuna 7B</td>
+      <td class="text-center">0.00 ± 0.00</td>
+      <td class="text-center">1.04 ± 0.00</td>
+      <td class="text-center">1.06 ± 0.00</td>
+      <td class="text-center">940.71 ± 12.48</td>
+      <td class="text-center">208.05 ± 2.81</td>
+      <td class="text-center">1.40 ± 0.00</td>
+      <td class="text-center">0,06 ± 0.00</td>
+      <td class="text-center">4.78 ± 0.06</td>
+      <td class="text-center">4.80 ± 0.06</td>
+      <td class="text-center">634.48 ± 8.58</td>
+      <td class="text-center">145.12 ± 1.94</td>
+      <td class="text-center">1.46 ± 0.01</td>
+    </tr>
+    <tr>
+      <td class="text-center">MixSUra 8x7B</td>
+      <td class="text-center">0.00 ± -</td>
+      <td class="text-center">0.56 ± -</td>
+      <td class="text-center">0.63 ± -</td>
+      <td class="text-center">535.76 ± -</td>
+      <td class="text-center">133.64 ± -</td>
+      <td class="text-center">1.00 ± -</td>
+      <td class="text-center">0,07 ± -</td>
+      <td class="text-center">0.20 ± -</td>
+      <td class="text-center">0.29 ± -</td>
+      <td class="text-center">25.96 ± -</td>
+      <td class="text-center">8.79 ± -</td>
+      <td class="text-center">1.00 ± -</td>
+    </tr>
+    <tr>
+      <td class="text-center">GPT-3.5</td>
+      <td class="text-center">0.03 ± 0.00</td>
+      <td class="text-center" style="background-color: #f0f0f0;">0.29 ± 0.01</td>
+      <td class="text-center">0.46 ± 0.01</td>
+      <td class="text-center">398.19 ± 11.01</td>
+      <td class="text-center">96.42 ± 2.54</td>
+      <td class="text-center">-</td>
+      <td class="text-center">0.59 ± 0.00</td>
+      <td class="text-center">0.06 ± 0.00</td>
+      <td class="text-center">0.19 ± 0.00</td>
+      <td class="text-center">1.99 ± 0.08</td>
+      <td class="text-center">0.74 ± 0.02</td>
+      <td class="text-center">-</td>
+    </tr>
+    <tr>
+      <td class="text-center">GPT-4</td>
+      <td class="text-center" style="background-color: #f0f0f0;">0.06 ± 0.00</td>
+      <td class="text-center">0.36 ± 0.01</td>
+      <td class="text-center" style="background-color: #f0f0f0;">0.41 ± 0.01</td>
+      <td class="text-center" style="background-color: #f0f0f0;">347.82 ± 10.23</td>
+      <td class="text-center" style="background-color: #f0f0f0;">86.96 ± 2.41</td>
+      <td class="text-center">-</td>
+      <td class="text-center" style="background-color: #f0f0f0;">0.67 ± 0.00</td>
+      <td class="text-center" style="background-color: #f0f0f0;">0.01 ± 0.00</td>
+      <td class="text-center" style="background-color: #f0f0f0;">0.02 ± 0.00</td>
+      <td class="text-center" style="background-color: #f0f0f0;">1.30 ± 0.04</td>
+      <td class="text-center" style="background-color: #f0f0f0;">0.54 ± 0.01</td>
+      <td class="text-center">-</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <!-- /.container -->
+  <!-- Footer -->
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">
+      Copyright &copy; MELT @ 2024
+    </p>
+  </div>
+  <!-- /.container -->
+</footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://ai.stanford.edu/~sttruong/melt/assets/vendor/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ai.stanford.edu/~sttruong/melt/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="https://ai.stanford.edu/~sttruong/melt/assets/vendor/dataTables/dataTables.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://ai.stanford.edu/~sttruong/melt/assets/vendor/dataTables/dataTables.bootstrap4.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://ai.stanford.edu/~sttruong/melt/assets/vendor/dataTables/dataTables.fixedColumns.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://ai.stanford.edu/~sttruong/melt/assets/vendor/dataTables/fixedColumns.dataTables.js" type="text/javascript"></script>
+
+  <!-- Custom scripts for this template -->
+  <script type="text/javascript" src="https://ai.stanford.edu/~sttruong/melt/assets/js/main.js"></script>
+</body>
+
+</html>
