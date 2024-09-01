@@ -1,0 +1,8 @@
+- zero-shot
+- few-shot
+- weaker-prompt
+- fairness-aware
+- robustness-aware
+- chain-of-thought
+- randomized-choice
+- bias-toxicity 

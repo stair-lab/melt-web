@@ -1,5 +1,5 @@
-title: ViLLM
-description: "Crossing Linguistic Horizons: Finetuning and Comprehensive Evaluation of Vietnamese Large Language Models"
+title: MELT
+description: "Multilingual Evaluation Toolkits"
 
 # disabled because we are using a custom domain
 baseurl: https://ai.stanford.edu/~sttruong/villm
