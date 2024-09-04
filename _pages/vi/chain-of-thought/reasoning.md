@@ -8,7 +8,7 @@ permalink: /leaderboard/vi/chain-of-thought/reasoning
   <thead>
     <tr>
       <th rowspan="2" class="text-center align-middle"><b>Models</b></th>
-      <th colspan="3" class="text-center"><b>Metrics</b></th>
+      <th colspan="3" class="text-center"><b>MATH</b></th>
     </tr>
     <tr>
       <th class="text-center"><b>EM <span style="vertical-align: super;">↑</span></b></th>
