@@ -11,14 +11,14 @@ permalink: /leaderboard/vi/bias-toxicity/question-answering
       <th rowspan="2" class="text-center align-middle">
         <b>Models</b>
       </th>
-      {% for dataset in site.data.leaderboard[lang].bias_toxicity.qa %}
+      {% for dataset in site.data.leaderboard[lang].bias_toxicity.question_answering %}
       <th colspan="5" class="text-center">
         <b>{{ dataset[0] }}</b>
       </th>
       {% endfor %}
     </tr>
     <tr>
-      {% for dataset in site.data.leaderboard[lang].bias_toxicity.qa %}
+      {% for dataset in site.data.leaderboard[lang].bias_toxicity.question_answering %}
       <th class="text-center"><b>DRR↓</b></th>
       <th class="text-center"><b>DRG↓</b></th>
       <th class="text-center"><b>SAR↓</b></th>
@@ -33,7 +33,7 @@ permalink: /leaderboard/vi/bias-toxicity/question-answering
       <td class="text-center">
         <b>{{ model }}</b> 
       </td>
-      {% for dataset in site.data.leaderboard[lang].bias_toxicity.qa %}
+      {% for dataset in site.data.leaderboard[lang].bias_toxicity.question_answering %}
         {% assign DRR_min = 1 %} 
         {% assign DRG_min = 1 %}
         {% assign SAR_min = 1 %}
