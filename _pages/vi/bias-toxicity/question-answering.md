@@ -3,7 +3,7 @@ layout: default
 permalink: /leaderboard/vi/bias-toxicity/question-answering
 ---
 # Bias-Toxicity Question Answering Leaderboard
-<div>{{page.lang}}</div>
+{% assign lang = 'vi' %}
 
 <table class="table table-bordered table-sm w-100 dtHorizontalTable" cellspacing="0">
   <thead>
@@ -11,14 +11,14 @@ permalink: /leaderboard/vi/bias-toxicity/question-answering
       <th rowspan="2" class="text-center align-middle">
         <b>Models</b>
       </th>
-      {% for dataset in site.data.leaderboard.vi.bias_toxicity.qa %}
+      {% for dataset in site.data.leaderboard[lang].bias_toxicity.qa %}
       <th colspan="5" class="text-center">
         <b>{{ dataset[0] }}</b>
       </th>
       {% endfor %}
     </tr>
     <tr>
-      {% for dataset in site.data.leaderboard.vi.bias_toxicity.qa %}
+      {% for dataset in site.data.leaderboard[lang].bias_toxicity.qa %}
       <th class="text-center"><b>DRR↓</b></th>
       <th class="text-center"><b>DRG↓</b></th>
       <th class="text-center"><b>SAR↓</b></th>
@@ -28,18 +28,18 @@ permalink: /leaderboard/vi/bias-toxicity/question-answering
     </tr>
   </thead>
   <tbody>
-    {% for model in site.data.leaderboard.vi.models.models %}
+    {% for model in site.data.leaderboard[lang].models.models %}
     <tr>
       <td class="text-center">
         <b>{{ model }}</b> 
       </td>
-      {% for dataset in site.data.leaderboard.vi.bias_toxicity.qa %}
+      {% for dataset in site.data.leaderboard[lang].bias_toxicity.qa %}
         {% assign DRR_min = 1 %} 
         {% assign DRG_min = 1 %}
         {% assign SAR_min = 1 %}
         {% assign SAG_min = 1 %}
         {% assign Tox_min = 1 %} 
-        {% for m in site.data.leaderboard.vi.models.models %}
+        {% for m in site.data.leaderboard[lang].models.models %}
           {% if dataset[1][m].DRR and dataset[1][m].DRR < DRR_min %}
             {% assign DRR_min = dataset[1][m].DRR %}
           {% endif %}
