@@ -3,124 +3,84 @@ layout: default
 permalink: /leaderboard/ind/few-shot/information-retrieval
 ---
 # Few-Shot Information Retrieval Leaderboard
+{% assign lang = 'ind' %}
 
 <table class="table table-bordered table-sm w-100 dtHorizontalTable" cellspacing="0">
-    <thead>
-        <tr>
-            <th rowspan="2" class="text-center align-middle"><b>Models</b></th>
-            <th colspan="4" class="text-center"><b>mMARCO</b></th>
-            <th colspan="4" class="text-center"><b>mRobust04</b></th>
-        </tr>
-        <tr>
-            <th class="text-center"><b>M@10<span style="vertical-align: super;">↑</span></b></th>
-            <th class="text-center"><b>M@10B<span style="vertical-align: super;">↑</span></b></th>
-            <th class="text-center"><b>N@10<span style="vertical-align: super;">↑</span></b></th>
-            <th class="text-center"><b>N@10B<span style="vertical-align: super;">↑</span></b></th>
-            <th class="text-center"><b>M@10<span style="vertical-align: super;">↑</span></b></th>
-            <th class="text-center"><b>M@10B<span style="vertical-align: super;">↑</span></b></th>
-            <th class="text-center"><b>N@10<span style="vertical-align: super;">↑</span></b></th>
-            <th class="text-center"><b>N@10B<span style="vertical-align: super;">↑</span></b></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="text-center"><b>URA-LLaMa 70B</b></td>
-            <td class="text-center">0.05 ± 0.00</td>
-            <td class="text-center">0.11 ± 0.00</td>
-            <td class="text-center">0.06 ± 0.00</td>
-            <td class="text-center">0.14 ± 0.00</td>
-            <td class="text-center">0.04±0.00</td>
-            <td class="text-center">0.04±0.00</td>
-            <td class="text-center">0.03±0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.04±0.00</td>
-        </tr>
-        <tr>
-            <td class="text-center"><b>URA-LLaMa 13B</b></td>
-            <td class="text-center">0.04 ± 0.00</td>
-            <td class="text-center">0.10 ± 0.00</td>
-            <td class="text-center">0.06 ± 0.00</td>
-            <td class="text-center">0.14 ± 0.00</td>
-            <td class="text-center">0.03±0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.05±0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.04±0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.04±0.00</td>
-        </tr>
-        <tr>
-            <td class="text-center"><b>URA-LLaMa 7B</b></td>
-            <td class="text-center">0.04 ± 0.00</td>
-            <td class="text-center">0.11 ± 0.00</td>
-            <td class="text-center">0.06 ± 0.00</td>
-            <td class="text-center">0.16 ± 0.00</td>
-            <td class="text-center">0.03 ± 0.00</td>
-            <td class="text-center">0.03 ± 0.00</td>
-            <td class="text-center">0.02 ± 0.00</td>
-            <td class="text-center">0.02 ± 0.00</td>
-        </tr>
-        <tr>
-            <td class="text-center"><b>LLaMa-2 13B</b></td>
-            <td class="text-center" style="background-color: cyan;">0.07 ± 0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.15 ± 0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.09 ± 0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.21 ± 0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.05±0.00</td>
-            <td class="text-center">0.04±0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.04±0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.04±0.00</td>
-        </tr>
-        <tr>
-            <td class="text-center"><b>LLaMa-2 7B</b></td>
-            <td class="text-center">0.05 ± 0.00</td>
-            <td class="text-center">0.11 ± 0.00</td>
-            <td class="text-center">0.07 ± 0.00</td>
-            <td class="text-center">0.16 ± 0.00</td>
-            <td class="text-center">0.02±0.00</td>
-            <td class="text-center">0.03±0.00</td>
-            <td class="text-center">0.03±0.00</td>
-            <td class="text-center">0.02±0.00</td>
-        </tr>
-        <tr>
-            <td class="text-center"><b>Vietcuna 7B</b></td>
-            <td class="text-center">0.00 ± 0.00</td>
-            <td class="text-center">0.00 ± 0.00</td>
-            <td class="text-center">0.00 ± 0.00</td>
-            <td class="text-center">0.00 ± 0.00</td>
-            <td class="text-center">0.00±0.00</td>
-            <td class="text-center">0.00±0.00</td>
-            <td class="text-center">0.00±0.00</td>
-            <td class="text-center">0.00±0.00</td>
-        </tr>
-        <tr>
-            <td class="text-center"><b>MixSUra 8x7B</b></td>
-            <td class="text-center">0.01 ± -</td>
-            <td class="text-center">0.07 ± -</td>
-            <td class="text-center">0.04 ± -</td>
-            <td class="text-center">0.11 ± -</td>
-            <td class="text-center">0.04±-</td>
-            <td class="text-center">0.04±-</td>
-            <td class="text-center">0.02±-</td>
-            <td class="text-center">0.02±-</td>
-        </tr>
-        <tr>
-            <td class="text-center"><b>GPT-3.5</b></td>
-            <td class="text-center">-</td>
-            <td class="text-center">-</td>
-            <td class="text-center">-</td>
-            <td class="text-center">-</td>
-            <td class="text-center">-</td>
-            <td class="text-center">-</td>
-            <td class="text-center">-</td>
-            <td class="text-center">-</td>
-        </tr>
-        <tr>
-            <td class="text-center"><b>GPT-4</b></td>
-            <td class="text-center">-</td>
-            <td class="text-center">-</td>
-            <td class="text-center">-</td>
-            <td class="text-center">-</td>
-            <td class="text-center">-</td>
-            <td class="text-center">-</td>
-            <td class="text-center">-</td>
-            <td class="text-center">-</td>
-        </tr>
-    </tbody>
+  <thead>
+    <tr>
+      <th rowspan="2" class="text-center align-middle">
+        <b>Models</b>
+      </th>
+      {% for dataset in site.data.leaderboard[lang].few_shot.information_retrieval %}
+      <th colspan="4" class="text-center">
+        <b>{{ dataset[0] }}</b>
+      </th>
+      {% endfor %}
+    </tr>
+    <tr>
+      {% for dataset in site.data.leaderboard[lang].few_shot.information_retrieval %}
+      <th class="text-center"><b>M@10↑</b></th>
+      <th class="text-center"><b>M@10B↑</b></th>
+      <th class="text-center"><b>N@10↑</b></th>
+      <th class="text-center"><b>N@10B↑</b></th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for model in site.data.leaderboard[lang].models.models %}
+    <tr>
+      <td class="text-center">
+        <b>{{ model }}</b> 
+      </td>
+      {% for dataset in site.data.leaderboard[lang].few_shot.information_retrieval %}
+        {% assign M10_best = 0 %} 
+        {% assign M10B_best = 0 %}
+        {% assign N10_best = 0 %} 
+        {% assign N10B_best = 0 %}
+        {% for m in site.data.leaderboard[lang].models.models %}
+          {% if dataset[1][m]["M@10"] and dataset[1][m]["M@10"] > M10_best %}
+            {% assign M10_best = dataset[1][m]["M@10"] %}
+          {% endif %}
+          {% if dataset[1][m]["M@10B"] and dataset[1][m]["M@10B"] > M10B_best %}
+            {% assign M10B_best = dataset[1][m]["M@10B"] %}
+          {% endif %}
+          {% if dataset[1][m]["N@10"] and dataset[1][m]["N@10"] > N10_best %}
+            {% assign N10_best = dataset[1][m]["N@10"] %}
+          {% endif %}
+          {% if dataset[1][m]["N@10B"] and dataset[1][m]["N@10B"] > N10B_best %}
+            {% assign N10B_best = dataset[1][m]["N@10B"] %}
+          {% endif %}
+        {% endfor %}
+        <td class="text-center" {% if dataset[1][model]["M@10"] == M10_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model]["M@10"] %}
+          {{ dataset[1][model]["M@10"] | round: 2 }} ± {{ dataset[1][model]["M@10_std"] | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model]["M@10B"] == M10B_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model]["M@10B"] %}
+          {{ dataset[1][model]["M@10B"] | round: 2 }} ± {{ dataset[1][model]["M@10B_std"] | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model]["N@10"] == N10_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model]["N@10"] %}
+          {{ dataset[1][model]["N@10"] | round: 2 }} ± {{ dataset[1][model]["N@10_std"] | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model]["N@10B"] == N10B_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model]["N@10B"] %}
+          {{ dataset[1][model]["N@10B"] | round: 2 }} ± {{ dataset[1][model]["N@10B_std"] | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </tbody>
 </table>

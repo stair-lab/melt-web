@@ -3,124 +3,84 @@ layout: default
 permalink: /leaderboard/ind/robustness-aware/translation
 ---
 # Robustness-Aware Translation Leaderboard
+{% assign lang = 'ind' %}
 
 <table class="table table-bordered table-sm w-100 dtHorizontalTable" cellspacing="0">
-    <thead>
-        <tr>
-            <th rowspan="2" class="text-center align-middle"><b>Models</b></th>
-            <th colspan="4" class="text-center"><b>PhoMT</b></th>
-            <th colspan="4" class="text-center"><b>OPUS100</b></th>
-        </tr>
-        <tr>
-            <th class="text-center"><b>(En → Vi)</b></th>
-            <th class="text-center"><b>(Vi → En)</b></th>
-            <th class="text-center"><b>(En → Vi)</b></th>
-            <th class="text-center"><b>(Vi → En)</b></th>
-            <th class="text-center"><b>(En → Vi)</b></th>
-            <th class="text-center"><b>(Vi → En)</b></th>
-            <th class="text-center"><b>(En → Vi)</b></th>
-            <th class="text-center"><b>(Vi → En)</b></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="text-center">URA-LLaMa 70B</td>
-            <td class="text-center" style="background-color: cyan;">0.25 ± 0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.58 ± 0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.11 ± 0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.51 ± 0.00</td>
-            <td class="text-center">0.05 ± 0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.40 ± 0.01</td>
-            <td class="text-center">0.06 ± 0.00</td>
-            <td class="text-center">0.36 ± 0.00</td>
-        </tr>
-        <tr>
-            <td class="text-center">URA-LLaMa 13B</td>
-            <td class="text-center">0.23 ± 0.00</td>
-            <td class="text-center">0.55 ± 0.00</td>
-            <td class="text-center">0.10 ± 0.00</td>
-            <td class="text-center">0.50 ± 0.00</td>
-            <td class="text-center">0.03 ± 0.00</td>
-            <td class="text-center">0.38 ± 0.01</td>
-            <td class="text-center">0.05 ± 0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.38 ± 0.00</td>
-        </tr>
-        <tr>
-            <td class="text-center">URA-LLaMa 7B</td>
-            <td class="text-center">0.15 ± 0.00</td>
-            <td class="text-center">0.48 ± 0.00</td>
-            <td class="text-center">0.06 ± 0.00</td>
-            <td class="text-center">0.46 ± 0.00</td>
-            <td class="text-center">0.02 ± 0.00</td>
-            <td class="text-center">0.35 ± 0.00</td>
-            <td class="text-center">0.03 ± 0.00</td>
-            <td class="text-center">0.34 ± 0.01</td>
-        </tr>
-        <tr>
-            <td class="text-center">LLaMa-2 13B</td>
-            <td class="text-center">0.20 ± 0.00</td>
-            <td class="text-center">0.51 ± 0.00</td>
-            <td class="text-center">0.07 ± 0.00</td>
-            <td class="text-center">0.44 ± 0.00</td>
-            <td class="text-center">0.03 ± 0.00</td>
-            <td class="text-center">0.36 ± 0.01</td>
-            <td class="text-center">0.04 ± 0.00</td>
-            <td class="text-center">0.32 ± 0.00</td>
-        </tr>
-        <tr>
-            <td class="text-center">LLaMa-2 7B</td>
-            <td class="text-center">0.13 ± 0.00</td>
-            <td class="text-center">0.41 ± 0.00</td>
-            <td class="text-center">0.05 ± 0.00</td>
-            <td class="text-center">0.42 ± 0.00</td>
-            <td class="text-center">0.02 ± 0.00</td>
-            <td class="text-center">0.31 ± 0.00</td>
-            <td class="text-center">0.03 ± 0.00</td>
-            <td class="text-center">0.30 ± 0.00</td>
-        </tr>
-        <tr>
-            <td class="text-center">Vietcuna 7B</td>
-            <td class="text-center">0.17 ± 0.00</td>
-            <td class="text-center">0.43 ± 0.00</td>
-            <td class="text-center">0.07 ± 0.01</td>
-            <td class="text-center">0.41 ± 0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.09 ± 0.01</td>
-            <td class="text-center">0.38 ± 0.01</td>
-            <td class="text-center" style="background-color: cyan;">0.09 ± 0.01</td>
-            <td class="text-center">0.33 ± 0.00</td>
-        </tr>
-        <tr>
-            <td class="text-center">MixSUra 8x7B</td>
-            <td class="text-center">0.14 ± -</td>
-            <td class="text-center">0.50 ± -</td>
-            <td class="text-center">0.11 ± -</td>
-            <td class="text-center">0.46 ± -</td>
-            <td class="text-center">0.06 ± -</td>
-            <td class="text-center">0.36 ± -</td>
-            <td class="text-center">0.06 ± -</td>
-            <td class="text-center">0.31 ± -</td>
-        </tr>
-        <tr>
-            <td class="text-center">GPT-3.5</td>
-            <td class="text-center" style="background-color: #f0f0f0;">0.31 ± 0.00</td>
-            <td class="text-center">0.64 ± 0.00</td>
-            <td class="text-center">0.17 ± 0.00</td>
-            <td class="text-center">0.59 ± 0.00</td>
-            <td class="text-center">0.15 ± 0.01</td>
-            <td class="text-center">0.49 ± 0.01</td>
-            <td class="text-center">0.21 ± 0.01</td>
-            <td class="text-center">0.48 ± 0.00</td>
-        </tr>
-        <tr>
-            <td class="text-center">GPT-4</td>
-            <td class="text-center" style="background-color: #f0f0f0;">0.31 ± 0.00</td>
-            <td class="text-center" style="background-color: #f0f0f0;">0.65 ± 0.00</td>
-            <td class="text-center" style="background-color: #f0f0f0;">0.20 ± 0.00</td>
-            <td class="text-center" style="background-color: #f0f0f0;">0.62 ± 0.00</td>
-            <td class="text-center" style="background-color: #f0f0f0;">0.16 ± 0.01</td>
-            <td class="text-center" style="background-color: #f0f0f0;">0.50 ± 0.01</td>
-            <td class="text-center" style="background-color: #f0f0f0;">0.23 ± 0.01</td>
-            <td class="text-center" style="background-color: #f0f0f0;">0.51 ± 0.00</td>
-        </tr>
-    </tbody>
+  <thead>
+    <tr>
+      <th rowspan="2" class="text-center align-middle">
+        <b>Models</b>
+      </th>
+      {% for dataset in site.data.leaderboard[lang].robustness_aware.translation %}
+      <th colspan="4" class="text-center">
+        <b>{{ dataset[0] }}</b>
+      </th>
+      {% endfor %}
+    </tr>
+    <tr>
+      {% for dataset in site.data.leaderboard[lang].robustness_aware.translation %}
+      <th class="text-center"><b>BLEU envi↑</b></th>
+      <th class="text-center"><b>BLEU vien↑</b></th>
+      <th class="text-center"><b>hLEPOR envi↑</b></th>
+      <th class="text-center"><b>hLEPOR vien↑</b></th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for model in site.data.leaderboard[lang].models.models %}
+    <tr>
+      <td class="text-center">
+        <b>{{ model }}</b>
+      </td>
+      {% for dataset in site.data.leaderboard[lang].robustness_aware.translation %}
+        {% assign bleu_envi_best = 0 %}
+        {% assign bleu_vien_best = 0 %}
+        {% assign hlepor_envi_best = 0 %}
+        {% assign hlepor_vien_best = 0 %}
+        {% for m in site.data.leaderboard[lang].models.models %}
+          {% if dataset[1][m]["BLEU envi"] and dataset[1][m]["BLEU envi"] > bleu_envi_best %}
+            {% assign bleu_envi_best = dataset[1][m]["BLEU envi"] %}
+          {% endif %}
+          {% if dataset[1][m]["BLEU vien"] and dataset[1][m]["BLEU vien"] > bleu_vien_best %}
+            {% assign bleu_vien_best = dataset[1][m]["BLEU vien"] %}
+          {% endif %}
+          {% if dataset[1][m]["hLEPOR envi"] and dataset[1][m]["hLEPOR envi"] > hlepor_envi_best %}
+            {% assign hlepor_envi_best = dataset[1][m]["hLEPOR envi"] %}
+          {% endif %}
+          {% if dataset[1][m]["hLEPOR vien"] and dataset[1][m]["hLEPOR vien"] > hlepor_vien_best %}
+            {% assign hlepor_vien_best = dataset[1][m]["hLEPOR vien"] %}
+          {% endif %}
+        {% endfor %}
+        <td class="text-center" {% if dataset[1][model]["BLEU envi"] == bleu_envi_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model]["BLEU envi"] %}
+          {{ dataset[1][model]["BLEU envi"] | round: 2 }} ± {{ dataset[1][model]["BLEU envi_std"] | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model]["BLEU vien"] == bleu_vien_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model]["BLEU vien"] %}
+          {{ dataset[1][model]["BLEU vien"] | round: 2 }} ± {{ dataset[1][model]["BLEU vien_std"] | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model]["hLEPOR envi"] == hlepor_envi_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model]["hLEPOR envi"] %}
+          {{ dataset[1][model]["hLEPOR envi"] | round: 2 }} ± {{ dataset[1][model]["hLEPOR envi_std"] | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model]["hLEPOR vien"] == hlepor_vien_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model]["hLEPOR vien"] %}
+          {{ dataset[1][model]["hLEPOR vien"] | round: 2 }} ± {{ dataset[1][model]["hLEPOR vien_std"] | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </tbody>
 </table>

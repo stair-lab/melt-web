@@ -3,264 +3,94 @@ layout: default
 permalink: /leaderboard/ind/bias-toxicity/translation
 ---
 # Bias-Toxicity Translation Leaderboard
+{% assign lang = 'ind' %} 
 
 <table class="table table-bordered table-sm w-100 dtHorizontalTable" cellspacing="0">
   <thead>
     <tr>
       <th rowspan="2" class="text-center align-middle"><b>Models</b></th>
-      <th colspan="5" class="text-center"><b>PhoMT (En - Vi)</b></th>
-      <th colspan="5" class="text-center"><b>OPUS100 (En - Vi)</b></th>
+      {% for dataset in site.data.leaderboard[lang].bias_toxicity.translation %}
+      <th colspan="5" class="text-center">
+        <b>{{ dataset[0] }}</b>
+      </th>
+      {% endfor %}
     </tr>
     <tr>
-      <th class="text-center"><b>DRR$→|</b></th>
-      <th class="text-center"><b>DRG$→|</b></th>
-      <th class="text-center"><b>SAR$→|</b></th>
-      <th class="text-center"><b>SAG$→|</b></th>
-      <th class="text-center"><b>Tox<span style="vertical-align: super;">↓</span></b></th>
-      <th class="text-center"><b>DRR$→|</b></th>
-      <th class="text-center"><b>DRG$→|</b></th>
-      <th class="text-center"><b>SAR$→|</b></th>
-      <th class="text-center"><b>SAG$→|</b></th>
-      <th class="text-center"><b>Tox<span style="vertical-align: super;">↓</span></b></th>
+      {% for dataset in site.data.leaderboard[lang].bias_toxicity.translation %}
+      <th class="text-center"><b>DRR↓</b></th>
+      <th class="text-center"><b>DRG↓</b></th>
+      <th class="text-center"><b>SAR↓</b></th>
+      <th class="text-center"><b>SAG↓</b></th>
+      <th class="text-center"><b>Tox↓</b></th>
+      {% endfor %}
     </tr>
   </thead>
   <tbody>
+    {% for model in site.data.leaderboard[lang].models.models %}
     <tr>
-      <td class="text-center"><b>URA-LLaMa 70B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.03 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.30 ± 0.01</td>
-      <td class="text-center">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.27 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.47 ± 0.01</td>
-      <td class="text-center">0.06 ± 0.00</td>
+      <td class="text-center">
+        <b>{{ model }}</b> 
+      </td>
+      {% for dataset in site.data.leaderboard[lang].bias_toxicity.translation %}
+        {% assign DRR_min = 1 %} 
+        {% assign DRG_min = 1 %}
+        {% assign SAR_min = 1 %}
+        {% assign SAG_min = 1 %}
+        {% assign Tox_min = 1 %} 
+        {% for m in site.data.leaderboard[lang].models.models %}
+          {% if dataset[1][m].DRR and dataset[1][m].DRR < DRR_min %}
+            {% assign DRR_min = dataset[1][m].DRR %}
+          {% endif %}
+          {% if dataset[1][m].DRG and dataset[1][m].DRG < DRG_min %}
+            {% assign DRG_min = dataset[1][m].DRG %}
+          {% endif %}
+          {% if dataset[1][m].SAR and dataset[1][m].SAR < SAR_min %}
+            {% assign SAR_min = dataset[1][m].SAR %}
+          {% endif %}
+          {% if dataset[1][m].SAG and dataset[1][m].SAG < SAG_min %}
+            {% assign SAG_min = dataset[1][m].SAG %}
+          {% endif %}
+          {% if dataset[1][m].Tox and dataset[1][m].Tox < Tox_min %}
+            {% assign Tox_min = dataset[1][m].Tox %}
+          {% endif %}
+        {% endfor %}
+        <td class="text-center" {% if dataset[1][model].DRR == DRR_min %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].DRR %}
+          {{ dataset[1][model].DRR | round: 2 }} ± {{ dataset[1][model].DRR_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model].DRG == DRG_min %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].DRG %}
+          {{ dataset[1][model].DRG | round: 2 }} ± {{ dataset[1][model].DRG_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model].SAR == SAR_min %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].SAR %}
+          {{ dataset[1][model].SAR | round: 2 }} ± {{ dataset[1][model].SAR_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model].SAG == SAG_min %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].SAG %}
+          {{ dataset[1][model].SAG | round: 2 }} ± {{ dataset[1][model].SAG_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model].Tox == Tox_min %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].Tox %}
+          {{ dataset[1][model].Tox | round: 2 }} ± {{ dataset[1][model].Tox_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+      {% endfor %}
     </tr>
-    <tr>
-      <td class="text-center"><b>URA-LLaMa 13B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.09 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.33 ± 0.01</td>
-      <td class="text-center">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.27 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.43 ± 0.02</td>
-      <td class="text-center">0.07 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>URA-LLaMa 7B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.13 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.33 ± 0.01</td>
-      <td class="text-center">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.18 ± 0.03</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.47 ± 0.01</td>
-      <td class="text-center">0.07 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>LLaMa-2 13B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.08 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.33 ± 0.02</td>
-      <td class="text-center">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.31 ± 0.02</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.47 ± 0.01</td>
-      <td class="text-center">0.06 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>LLaMa-2 7B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.17 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.29 ± 0.01</td>
-      <td class="text-center" style="background-color: cyan;">0.04 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.21 ± 0.02</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.45 ± 0.02</td>
-      <td class="text-center" style="background-color: cyan;">0.05 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>Vietcuna 7B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.18 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.36 ± 0.01</td>
-      <td class="text-center" style="background-color: cyan;">0.04 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.16 ± 0.03</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.43 ± 0.02</td>
-      <td class="text-center">0.07 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>GPT-3.5</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.11 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.34 ± 0.01</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.16 ± 0.03</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.43 ± 0.03</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.07 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>GPT-4</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.09 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.34 ± 0.01</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.14 ± 0.03</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.41 ± 0.01</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.07 ± 0.00</td>
-    </tr>
+    {% endfor %}
   </tbody>
-</table>
----
-layout: default
-permalink: /leaderboard/ind/bias-toxicity/translation
----
-# Bias-Toxicity Translation Leaderboard
-
-<table class="table table-bordered table-sm w-100 dtHorizontalTable" cellspacing="0">
-  <thead>
-    <tr>
-      <th rowspan="2" class="text-center align-middle"><b>Models</b></th>
-      <th colspan="5" class="text-center"><b>PhoMT (En $\to$ Vi)</b></th>
-      <th colspan="5" class="text-center"><b>OPUS100 (En $\to$ Vi)</b></th>
-    </tr>
-    <tr>
-      <th class="text-center"><b>DRR$\to\mid$</b></th>
-      <th class="text-center"><b>DRG$\to\mid$</b></th>
-      <th class="text-center"><b>SAR$\to\mid$</b></th>
-      <th class="text-center"><b>SAG$\to\mid$</b></th>
-      <th class="text-center"><b>Tox<span style="vertical-align: super;">↓</span></b></th>
-      <th class="text-center"><b>DRR$\to\mid$</b></th>
-      <th class="text-center"><b>DRG$\to\mid$</b></th>
-      <th class="text-center"><b>SAR$\to\mid$</b></th>
-      <th class="text-center"><b>SAG$\to\mid$</b></th>
-      <th class="text-center"><b>Tox<span style="vertical-align: super;">↓</span></b></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="text-center"><b>URA-LLaMa 70B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.03 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.30 ± 0.01</td>
-      <td class="text-center">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.27 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.47 ± 0.01</td>
-      <td class="text-center">0.06 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>URA-LLaMa 13B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.09 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.33 ± 0.01</td>
-      <td class="text-center">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.27 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.43 ± 0.02</td>
-      <td class="text-center">0.07 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>URA-LLaMa 7B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.13 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.33 ± 0.01</td>
-      <td class="text-center">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.18 ± 0.03</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.47 ± 0.01</td>
-      <td class="text-center">0.07 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>LLaMa-2 13B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.08 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.33 ± 0.02</td>
-      <td class="text-center">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.31 ± 0.02</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.47 ± 0.01</td>
-      <td class="text-center">0.06 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>LLaMa-2 7B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.17 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.29 ± 0.01</td>
-      <td class="text-center" style="background-color: cyan;">0.04 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.21 ± 0.02</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.45 ± 0.02</td>
-      <td class="text-center" style="background-color: cyan;">0.05 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>Vietcuna 7B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.18 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.36 ± 0.01</td>
-      <td class="text-center" style="background-color: cyan;">0.04 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.16 ± 0.03</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.43 ± 0.02</td>
-      <td class="text-center">0.07 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>GPT-3.5</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.11 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.34 ± 0.01</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.16 ± 0.03</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.43 ± 0.03</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.07 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>GPT-4</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.09 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.34 ± 0.01</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.14 ± 0.03</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.41 ± 0.01</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.07 ± 0.00</td>
-    </tr>
-  </tbody>
-</table>
+</table> 

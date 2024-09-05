@@ -3,144 +3,96 @@ layout: default
 permalink: /leaderboard/kr/few-shot/text-classification
 ---
 # Few-Shot Text Classification Leaderboard
+{% assign lang = 'kr' %}
 
 <table class="table table-bordered table-sm w-100 dtHorizontalTable" cellspacing="0">
-<thead>
-<tr>
-<th rowspan="2" class="text-center align-middle"><b>Models</b></th>
-<th colspan="5" class="text-center"><b>UiT-VSMEC</b></th>
-<th colspan="5" class="text-center"><b>PhoATIS</b></th>
-</tr>
-<tr>
-<th class="text-center"><b>AC<span style="vertical-align: super;">↑</span></b></th>
-<th class="text-center"><b>F1<span style="vertical-align: super;">↑</span></b></th>
-<th class="text-center"><b>AR<span style="vertical-align: super;">↑</span></b></th>
-<th class="text-center"><b>ECE<span style="vertical-align: super;">↓</span></b></th>
-<th class="text-center"><b>A@10<span style="vertical-align: super;">↑</span></b></th>
-<th class="text-center"><b>AC<span style="vertical-align: super;">↑</span></b></th>
-<th class="text-center"><b>F1<span style="vertical-align: super;">↑</span></b></th>
-<th class="text-center"><b>AR<span style="vertical-align: super;">↑</span></b></th>
-<th class="text-center"><b>ECE<span style="vertical-align: super;">↓</span></b></th>
-<th class="text-center"><b>A@10<span style="vertical-align: super;">↑</span></b></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="text-center"><b>URA-LLaMa 70B</b></td>
-<td class="text-center">0.25 ± 0.02</td>
-<td class="text-center" style="background-color: cyan;">0.15 ± 0.01</td>
-<td class="text-center">0.56 ± 0.01</td>
-<td class="text-center">0.25 ± 0.02</td>
-<td class="text-center">0.37 ± 0.06</td>
-<td class="text-center" style="background-color: cyan;">0.15 ± 0.01</td>
-<td class="text-center" style="background-color: cyan;">0.22 ± 0.03</td>
-<td class="text-center" style="background-color: cyan;">0.83 ± 0.00</td>
-<td class="text-center">0.81 ± 0.01</td>
-<td class="text-center" style="background-color: cyan;">0.13 ± 0.04</td>
-</tr>
-<tr>
-<td class="text-center"><b>URA-LLaMa 13B</b></td>
-<td class="text-center" style="background-color: cyan;">0.32 ± 0.02</td>
-<td class="text-center">0.12 ± 0.01</td>
-<td class="text-center">0.58 ± 0.01</td>
-<td class="text-center">0.22 ± 0.02</td>
-<td class="text-center" style="background-color: cyan;">0.57 ± 0.07</td>
-<td class="text-center">0.01 ± 0.01</td>
-<td class="text-center">0.06 ± 0.02</td>
-<td class="text-center">0.47 ± 0.00</td>
-<td class="text-center">0.84 ± 0.01</td>
-<td class="text-center">0.00 ± 0.01</td>
-</tr>
-<tr>
-<td class="text-center"><b>URA-LLaMa 7B</b></td>
-<td class="text-center">0.29 ± 0.02</td>
-<td class="text-center">0.11 ± 0.01</td>
-<td class="text-center" style="background-color: cyan;">0.60 ± 0.01</td>
-<td class="text-center" style="background-color: cyan;">0.12 ± 0.02</td>
-<td class="text-center">0.43 ± 0.06</td>
-<td class="text-center">0.06 ± 0.01</td>
-<td class="text-center">0.01 ± 0.00</td>
-<td class="text-center">0.55 ± 0.00</td>
-<td class="text-center">0.24 ± 0.01</td>
-<td class="text-center">0.08 ± 0.03</td>
-</tr>
-<tr>
-<td class="text-center"><b>LLaMa-2 13B</b></td>
-<td class="text-center">0.18 ± 0.02</td>
-<td class="text-center">0.08 ± 0.01</td>
-<td class="text-center">0.55 ± 0.01</td>
-<td class="text-center">0.45 ± 0.01</td>
-<td class="text-center">0.49 ± 0.07</td>
-<td class="text-center">0.02 ± 0.01</td>
-<td class="text-center">0.06 ± 0.02</td>
-<td class="text-center">0.57 ± 0.01</td>
-<td class="text-center">0.90 ± 0.01</td>
-<td class="text-center">0.01 ± 0.01</td>
-</tr>
-<tr>
-<td class="text-center"><b>LLaMa-2 7B</b></td>
-<td class="text-center">0.25 ± 0.02</td>
-<td class="text-center">0.12 ± 0.01</td>
-<td class="text-center">0.57 ± 0.01</td>
-<td class="text-center">0.21 ± 0.02</td>
-<td class="text-center">0.54 ± 0.06</td>
-<td class="text-center">0.03 ± 0.01</td>
-<td class="text-center">0.02 ± 0.01</td>
-<td class="text-center">0.56 ± 0.01</td>
-<td class="text-center">0.54 ± 0.01</td>
-<td class="text-center">0.01 ± 0.01</td>
-</tr>
-<tr>
-<td class="text-center"><b>Vietcuna 7B</b></td>
-<td class="text-center">0.15 ± 0.01</td>
-<td class="text-center">0.05 ± 0.01</td>
-<td class="text-center">0.46 ± 0.01</td>
-<td class="text-center">0.85 ± 0.01</td>
-<td class="text-center">0.15 ± 0.04</td>
-<td class="text-center">0.04 ± 0.01</td>
-<td class="text-center">0.01 ± 0.00</td>
-<td class="text-center">0.63 ± 0.00</td>
-<td class="text-center" style="background-color: cyan;">0.21 ± 0.01</td>
-<td class="text-center">0.07 ± 0.03</td>
-</tr>
-<tr>
-<td class="text-center"><b>MixSUra 8x7B</b></td>
-<td class="text-center">0.40 ± -</td>
-<td class="text-center">0.36 ± -</td>
-<td class="text-center">0.72 ± -</td>
-<td class="text-center">0.53 ± -</td>
-<td class="text-center">0.79 ± -</td>
-<td class="text-center">0.81 ± -</td>
-<td class="text-center">0.58 ± -</td>
-<td class="text-center">0.96 ± -</td>
-<td class="text-center">0.14 ± -</td>
-<td class="text-center">0.91 ± -</td>
-</tr>
-<tr>
-<td class="text-center"><b>GPT-3.5</b></td>
-<td class="text-center">0.42 ± 0.02</td>
-<td class="text-center">0.40 ± 0.02</td>
-<td class="text-center">-</td>
-<td class="text-center" style="background-color: #f0f0f0;">0.28 ± 0.02</td>
-<td class="text-center">0.42 ± 0.06</td>
-<td class="text-center">0.69 ± 0.02</td>
-<td class="text-center">0.67 ± 0.03</td>
-<td class="text-center">-</td>
-<td class="text-center" style="background-color: #f0f0f0;">0.63 ± 0.02</td>
-<td class="text-center">0.69 ± 0.05</td>
-</tr>
-<tr>
-<td class="text-center"><b>GPT-4</b></td>
-<td class="text-center" style="background-color: #f0f0f0;">0.49 ± 0.02</td>
-<td class="text-center" style="background-color: #f0f0f0;">0.48 ± 0.02</td>
-<td class="text-center">-</td>
-<td class="text-center">0.35 ± 0.02</td>
-<td class="text-center" style="background-color: #f0f0f0;">0.49 ± 0.06</td>
-<td class="text-center" style="background-color: #f0f0f0;">0.85 ± 0.01</td>
-<td class="text-center" style="background-color: #f0f0f0;">0.78 ± 0.03</td>
-<td class="text-center">-</td>
-<td class="text-center">0.79 ± 0.01</td>
-<td class="text-center" style="background-color: #f0f0f0;">0.88 ± 0.04</td>
-</tr>
-</tbody>
+  <thead>
+    <tr>
+      <th rowspan="2" class="text-center align-middle">
+        <b>Models</b>
+      </th>
+      {% for dataset in site.data.leaderboard[lang].few_shot.text_classification %}
+      <th colspan="5" class="text-center">
+        <b>{{ dataset[0] }}</b>
+      </th>
+      {% endfor %}
+    </tr>
+    <tr>
+      {% for dataset in site.data.leaderboard[lang].few_shot.text_classification %}
+      <th class="text-center"><b>AC↑</b></th>
+      <th class="text-center"><b>F1↑</b></th>
+      <th class="text-center"><b>AR↑</b></th>
+      <th class="text-center"><b>ECE↓</b></th>
+      <th class="text-center"><b>A@10↑</b></th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for model in site.data.leaderboard[lang].models.models %}
+    <tr>
+      <td class="text-center">
+        <b>{{ model }}</b>
+      </td>
+      {% for dataset in site.data.leaderboard[lang].few_shot.text_classification %}
+        {% assign AC_best = 0 %}
+        {% assign F1_best = 0 %}
+        {% assign AR_best = 0 %}
+        {% assign ECE_best = 1 %} 
+        {% assign A10_best = 0 %}
+        {% for m in site.data.leaderboard[lang].models.models %}
+          {% if dataset[1][m].AC and dataset[1][m].AC > AC_best %}
+            {% assign AC_best = dataset[1][m].AC %}
+          {% endif %}
+          {% if dataset[1][m].F1 and dataset[1][m].F1 > F1_best %}
+            {% assign F1_best = dataset[1][m].F1 %}
+          {% endif %}
+          {% if dataset[1][m].AR and dataset[1][m].AR > AR_best %}
+            {% assign AR_best = dataset[1][m].AR %}
+          {% endif %}
+          {% if dataset[1][m].ECE and dataset[1][m].ECE < ECE_best %}
+            {% assign ECE_best = dataset[1][m].ECE %}
+          {% endif %}
+          {% if dataset[1][m]["A@10"] and dataset[1][m]["A@10"] > A10_best %}
+            {% assign A10_best = dataset[1][m]["A@10"] %}
+          {% endif %}
+        {% endfor %}
+        <td class="text-center" {% if dataset[1][model].AC == AC_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].AC %}
+          {{ dataset[1][model].AC | round: 2 }} ± {{ dataset[1][model].AC_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model].F1 == F1_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].F1 %}
+          {{ dataset[1][model].F1 | round: 2 }} ± {{ dataset[1][model].F1_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model].AR == AR_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].AR %}
+          {{ dataset[1][model].AR | round: 2 }} ± {{ dataset[1][model].AR_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model].ECE == ECE_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].ECE %}
+          {{ dataset[1][model].ECE | round: 2 }} ± {{ dataset[1][model].ECE_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model]["A@10"] == A10_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model]["A@10"] %}
+          {{ dataset[1][model]["A@10"] | round: 2 }} ± {{ dataset[1][model]["A@10_std"] | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </tbody>
 </table>
