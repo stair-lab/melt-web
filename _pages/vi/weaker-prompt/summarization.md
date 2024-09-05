@@ -40,7 +40,7 @@ permalink: /leaderboard/vi/weaker-prompt/summarization
         {% assign R1_best = 0 %} 
         {% assign R2_best = 0 %}
         {% assign RL_best = 0 %} 
-        {% assign SC_best = 0 %}
+        {% assign SC_best = -1 %}
         {% assign BS_best = 0 %}
         {% assign Cv_best = 0 %}
         {% assign De_best = 0 %}
