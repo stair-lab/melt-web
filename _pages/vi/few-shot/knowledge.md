@@ -2,7 +2,7 @@
 layout: default
 permalink: /leaderboard/vi/few-shot/knowledge
 ---
-# few-shot Knowledge Leaderboard
+# Few-shot Knowledge Leaderboard
 {% assign lang = 'vi' %} 
 
 <table class="table table-bordered table-sm w-100 dtHorizontalTable" cellspacing="0">
@@ -11,7 +11,7 @@ permalink: /leaderboard/vi/few-shot/knowledge
       <th rowspan="2" class="text-center align-middle">
         <b>Models</b>
       </th>
-      {% for dataset in site.data.leaderboard[lang].robustness_aware.knowledge %}
+      {% for dataset in site.data.leaderboard[lang].few_shot.knowledge %}
       {% if dataset[1].num_fields == 2 %}
       <th colspan="2" class="text-center">
         <b>{{ dataset[0] }}</b>
@@ -24,7 +24,7 @@ permalink: /leaderboard/vi/few-shot/knowledge
       {% endfor %}
     </tr>
     <tr>
-      {% for dataset in site.data.leaderboard[lang].robustness_aware.knowledge %}
+      {% for dataset in site.data.leaderboard[lang].few_shot.knowledge %}
       {% if dataset[1].num_fields == 2 %}
       <th class="text-center"><b>EM↑</b></th>
       <th class="text-center"><b>F1↑</b></th>
@@ -44,7 +44,7 @@ permalink: /leaderboard/vi/few-shot/knowledge
       <td class="text-center">
         <b>{{ model }}</b> 
       </td>
-      {% for dataset in site.data.leaderboard[lang].robustness_aware.knowledge %}
+      {% for dataset in site.data.leaderboard[lang].few_shot.knowledge %}
         {% assign EM_best = 0 %} 
         {% assign F1_best = 0 %} 
         {% assign AC_best = 0 %} 

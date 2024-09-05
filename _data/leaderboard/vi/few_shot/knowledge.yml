@@ -1,4 +1,5 @@
 ZaloE2E:
+  num_fields: 2
   URA-LLaMa 70B:
     EM: 0.34
     EM_std: 0.02
