@@ -235,6 +235,7 @@ Below are our detail evaluation results, please choose the task and scenario to 
       <th><b>Zero-shot</b></th>
       <th><b>Few-shot</b></th>
       <th><b>Weaker Prompt</b></th>
+      <th><b>Medium Prompt</b></th>
       <th><b>Fairness Aware</b></th>
       <th><b>Robustness Aware</b></th>
       <th><b>Chain-of-Thought</b></th>
@@ -258,6 +259,10 @@ Below are our detail evaluation results, please choose the task and scenario to 
         
           <td>
               <a href="#" data-baseurl="" data-category="weaker-prompt" data-task="question-answering" class="dynamic-link"></a>
+          </td>
+        
+          <td>
+              <a href="#" data-baseurl="" data-category="medium-prompt" data-task="question-answering" class="dynamic-link"></a>
           </td>
         
           <td>
@@ -298,6 +303,10 @@ Below are our detail evaluation results, please choose the task and scenario to 
           </td>
         
           <td>
+              <a href="#" data-baseurl="" data-category="medium-prompt" data-task="summarization" class="dynamic-link"></a>
+          </td>
+        
+          <td>
               <a href="#" data-baseurl="" data-category="fairness-aware" data-task="summarization" class="dynamic-link"></a>
           </td>
         
@@ -332,6 +341,10 @@ Below are our detail evaluation results, please choose the task and scenario to 
         
           <td>
               <a href="#" data-baseurl="" data-category="weaker-prompt" data-task="sentiment-analysis" class="dynamic-link"></a>
+          </td>
+        
+          <td>
+              <a href="#" data-baseurl="" data-category="medium-prompt" data-task="sentiment-analysis" class="dynamic-link"></a>
           </td>
         
           <td>
@@ -372,6 +385,10 @@ Below are our detail evaluation results, please choose the task and scenario to 
           </td>
         
           <td>
+              <a href="#" data-baseurl="" data-category="medium-prompt" data-task="text-classification" class="dynamic-link"></a>
+          </td>
+        
+          <td>
               <a href="#" data-baseurl="" data-category="fairness-aware" data-task="text-classification" class="dynamic-link"></a>
           </td>
         
@@ -406,6 +423,10 @@ Below are our detail evaluation results, please choose the task and scenario to 
         
           <td>
               <a href="#" data-baseurl="" data-category="weaker-prompt" data-task="knowledge" class="dynamic-link"></a>
+          </td>
+        
+          <td>
+              <a href="#" data-baseurl="" data-category="medium-prompt" data-task="knowledge" class="dynamic-link"></a>
           </td>
         
           <td>
@@ -446,6 +467,10 @@ Below are our detail evaluation results, please choose the task and scenario to 
           </td>
         
           <td>
+              <a href="#" data-baseurl="" data-category="medium-prompt" data-task="toxicity-detection" class="dynamic-link"></a>
+          </td>
+        
+          <td>
               <a href="#" data-baseurl="" data-category="fairness-aware" data-task="toxicity-detection" class="dynamic-link"></a>
           </td>
         
@@ -480,6 +505,10 @@ Below are our detail evaluation results, please choose the task and scenario to 
         
           <td>
               <a href="#" data-baseurl="" data-category="weaker-prompt" data-task="information-retrieval" class="dynamic-link"></a>
+          </td>
+        
+          <td>
+              <a href="#" data-baseurl="" data-category="medium-prompt" data-task="information-retrieval" class="dynamic-link"></a>
           </td>
         
           <td>
@@ -520,6 +549,10 @@ Below are our detail evaluation results, please choose the task and scenario to 
           </td>
         
           <td>
+              <a href="#" data-baseurl="" data-category="medium-prompt" data-task="language-modeling" class="dynamic-link"></a>
+          </td>
+        
+          <td>
               <a href="#" data-baseurl="" data-category="fairness-aware" data-task="language-modeling" class="dynamic-link"></a>
           </td>
         
@@ -554,6 +587,10 @@ Below are our detail evaluation results, please choose the task and scenario to 
         
           <td>
               <a href="#" data-baseurl="" data-category="weaker-prompt" data-task="reasoning" class="dynamic-link"></a>
+          </td>
+        
+          <td>
+              <a href="#" data-baseurl="" data-category="medium-prompt" data-task="reasoning" class="dynamic-link"></a>
           </td>
         
           <td>
@@ -594,6 +631,10 @@ Below are our detail evaluation results, please choose the task and scenario to 
           </td>
         
           <td>
+              <a href="#" data-baseurl="" data-category="medium-prompt" data-task="translation" class="dynamic-link"></a>
+          </td>
+        
+          <td>
               <a href="#" data-baseurl="" data-category="fairness-aware" data-task="translation" class="dynamic-link"></a>
           </td>
         
@@ -622,7 +663,7 @@ Below are our detail evaluation results, please choose the task and scenario to 
     const langSelect = document.getElementById('lang');
     const imageElements = document.querySelectorAll('.tab-content img'); // Select all images within tab content
     const dynamicLinks = document.querySelectorAll('.dynamic-link');
-    const allLangTasks = {"vi":{"Question Answering":{"zero-shot":true,"few-shot":false,"weaker-prompt":true,"fairness-aware":true,"robustness-aware":true,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":true},"Summarization":{"zero-shot":true,"few-shot":false,"weaker-prompt":true,"fairness-aware":false,"robustness-aware":true,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":true},"Sentiment Analysis":{"zero-shot":true,"few-shot":true,"weaker-prompt":false,"fairness-aware":true,"robustness-aware":true,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Text Classification":{"zero-shot":true,"few-shot":true,"weaker-prompt":false,"fairness-aware":true,"robustness-aware":true,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Knowledge":{"zero-shot":true,"few-shot":true,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":true,"chain-of-thought":false,"randomized-choice":true,"bias-toxicity":false},"Toxicity Detection":{"zero-shot":true,"few-shot":true,"weaker-prompt":false,"fairness-aware":true,"robustness-aware":true,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Information Retrieval":{"zero-shot":true,"few-shot":true,"weaker-prompt":false,"fairness-aware":true,"robustness-aware":true,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Language Modeling":{"zero-shot":true,"few-shot":true,"weaker-prompt":false,"fairness-aware":true,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Reasoning":{"zero-shot":true,"few-shot":true,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":true,"randomized-choice":false,"bias-toxicity":false},"Translation":{"zero-shot":false,"few-shot":true,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":true,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":true}},"ind":{"Question Answering":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Summarization":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Sentiment Analysis":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Text Classification":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Knowledge":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Toxicity Detection":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Information Retrieval":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Language Modeling":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Reasoning":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Translation":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false}},"kr":{"Question Answering":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Summarization":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Sentiment Analysis":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Text Classification":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Knowledge":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Toxicity Detection":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Information Retrieval":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Language Modeling":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Reasoning":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Translation":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false}}}
+    const allLangTasks = {"vi":{"Question Answering":{"zero-shot":true,"few-shot":false,"weaker-prompt":true,"medium-prompt":true,"fairness-aware":true,"robustness-aware":true,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":true},"Summarization":{"zero-shot":true,"few-shot":false,"weaker-prompt":true,"medium-prompt":true,"fairness-aware":false,"robustness-aware":true,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":true},"Sentiment Analysis":{"zero-shot":true,"few-shot":true,"weaker-prompt":false,"fairness-aware":true,"robustness-aware":true,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Text Classification":{"zero-shot":true,"few-shot":true,"weaker-prompt":false,"fairness-aware":true,"robustness-aware":true,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Knowledge":{"zero-shot":true,"few-shot":true,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":true,"chain-of-thought":false,"randomized-choice":true,"bias-toxicity":false},"Toxicity Detection":{"zero-shot":true,"few-shot":true,"weaker-prompt":false,"fairness-aware":true,"robustness-aware":true,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Information Retrieval":{"zero-shot":true,"few-shot":true,"weaker-prompt":false,"fairness-aware":true,"robustness-aware":true,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Language Modeling":{"zero-shot":true,"few-shot":true,"weaker-prompt":false,"fairness-aware":true,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Reasoning":{"zero-shot":true,"few-shot":true,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":true,"randomized-choice":false,"bias-toxicity":false},"Translation":{"zero-shot":false,"few-shot":true,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":true,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":true}},"ind":{"Question Answering":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Summarization":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Sentiment Analysis":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Text Classification":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Knowledge":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Toxicity Detection":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Information Retrieval":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Language Modeling":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Reasoning":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Translation":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false}},"kr":{"Question Answering":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Summarization":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Sentiment Analysis":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Text Classification":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Knowledge":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Toxicity Detection":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Information Retrieval":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Language Modeling":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Reasoning":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false},"Translation":{"zero-shot":false,"few-shot":false,"weaker-prompt":false,"fairness-aware":false,"robustness-aware":false,"chain-of-thought":false,"randomized-choice":false,"bias-toxicity":false}}}
     
     function slugifyTaskNames(langData) {
         for (const taskName in langData) {

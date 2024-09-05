@@ -1,0 +1,164 @@
+PhoMT:
+  URA-LLaMa 70B:
+    "BLEU envi": 0.28
+    "BLEU envi_std": 0.00
+    "BLEU vien": 0.59
+    "BLEU vien_std": 0.00
+    "hLEPOR envi": 0.27
+    "hLEPOR envi_std": 0.00
+    "hLEPOR vien": 0.58
+    "hLEPOR vien_std": 0.00
+  URA-LLaMa 13B:
+    "BLEU envi": 0.25
+    "BLEU envi_std": 0.00
+    "BLEU vien": 0.55
+    "BLEU vien_std": 0.00
+    "hLEPOR envi": 0.15
+    "hLEPOR envi_std": 0.00
+    "hLEPOR vien": 0.56
+    "hLEPOR vien_std": 0.00
+  URA-LLaMa 7B:
+    "BLEU envi": 0.19
+    "BLEU envi_std": 0.00
+    "BLEU vien": 0.50
+    "BLEU vien_std": 0.00
+    "hLEPOR envi": 0.22
+    "hLEPOR envi_std": 0.00
+    "hLEPOR vien": 0.54
+    "hLEPOR vien_std": 0.00
+  LLaMa-2 13B:
+    "BLEU envi": 0.23
+    "BLEU envi_std": 0.00
+    "BLEU vien": 0.53
+    "BLEU vien_std": 0.00
+    "hLEPOR envi": 0.23
+    "hLEPOR envi_std": 0.00
+    "hLEPOR vien": 0.54
+    "hLEPOR vien_std": 0.00
+  LLaMa-2 7B:
+    "BLEU envi": 0.18
+    "BLEU envi_std": 0.00
+    "BLEU vien": 0.47
+    "BLEU vien_std": 0.00
+    "hLEPOR envi": 0.21
+    "hLEPOR envi_std": 0.00
+    "hLEPOR vien": 0.52
+    "hLEPOR vien_std": 0.00
+  Vietcuna 7B:
+    "BLEU envi": 0.15
+    "BLEU envi_std": 0.00
+    "BLEU vien": 0.35
+    "BLEU vien_std": 0.00
+    "hLEPOR envi": 0.03
+    "hLEPOR envi_std": 0.00
+    "hLEPOR vien": 0.11
+    "hLEPOR vien_std": 0.00
+  MixSUra:
+    "BLEU envi": 0.15
+    "BLEU envi_std": null
+    "BLEU vien": 0.51
+    "BLEU vien_std": null
+    "hLEPOR envi": 0.16
+    "hLEPOR envi_std": null
+    "hLEPOR vien": 0.52
+    "hLEPOR vien_std": null
+  GPT-3.5:
+    "BLEU envi": 0.33
+    "BLEU envi_std": 0.00
+    "BLEU vien": 0.65
+    "BLEU vien_std": 0.00
+    "hLEPOR envi": 0.33
+    "hLEPOR envi_std": 0.00
+    "hLEPOR vien": 0.63
+    "hLEPOR vien_std": 0.00
+  GPT-4:
+    "BLEU envi": 0.33
+    "BLEU envi_std": 0.00
+    "BLEU vien": 0.66
+    "BLEU vien_std": 0.00
+    "hLEPOR envi": 0.34
+    "hLEPOR envi_std": 0.00
+    "hLEPOR vien": 0.65
+    "hLEPOR vien_std": 0.00
+OPUS100:
+  URA-LLaMa 70B:
+    "BLEU envi": 0.10
+    "BLEU envi_std": 0.00
+    "BLEU vien": 0.44
+    "BLEU vien_std": 0.01
+    "hLEPOR envi": 0.14
+    "hLEPOR envi_std": 0.00
+    "hLEPOR vien": 0.41
+    "hLEPOR vien_std": 0.01
+  URA-LLaMa 13B:
+    "BLEU envi": 0.10
+    "BLEU envi_std": 0.01
+    "BLEU vien": 0.41
+    "BLEU vien_std": 0.01
+    "hLEPOR envi": 0.17
+    "hLEPOR envi_std": 0.01
+    "hLEPOR vien": 0.43
+    "hLEPOR vien_std": 0.01
+  URA-LLaMa 7B:
+    "BLEU envi": 0.08
+    "BLEU envi_std": 0.00
+    "BLEU vien": 0.38
+    "BLEU vien_std": 0.01
+    "hLEPOR envi": 0.14
+    "hLEPOR envi_std": 0.01
+    "hLEPOR vien": 0.39
+    "hLEPOR vien_std": 0.01
+  LLaMa-2 13B:
+    "BLEU envi": 0.09
+    "BLEU envi_std": 0.00
+    "BLEU vien": 0.39
+    "BLEU vien_std": 0.01
+    "hLEPOR envi": 0.14
+    "hLEPOR envi_std": 0.01
+    "hLEPOR vien": 0.40
+    "hLEPOR vien_std": 0.01
+  LLaMa-2 7B:
+    "BLEU envi": 0.07
+    "BLEU envi_std": 0.00
+    "BLEU vien": 0.34
+    "BLEU vien_std": 0.00
+    "hLEPOR envi": 0.11
+    "hLEPOR envi_std": 0.01
+    "hLEPOR vien": 0.36
+    "hLEPOR vien_std": 0.01
+  Vietcuna 7B:
+    "BLEU envi": 0.00
+    "BLEU envi_std": 0.00
+    "BLEU vien": 0.00
+    "BLEU vien_std": 0.00
+    "hLEPOR envi": 0.05
+    "hLEPOR envi_std": 0.00
+    "hLEPOR vien": 0.16
+    "hLEPOR vien_std": 0.00
+  MixSUra:
+    "BLEU envi": 0.07
+    "BLEU envi_std": null
+    "BLEU vien": 0.37
+    "BLEU vien_std": null
+    "hLEPOR envi": 0.09
+    "hLEPOR envi_std": null
+    "hLEPOR vien": 0.36
+    "hLEPOR vien_std": null
+  GPT-3.5:
+    "BLEU envi": 0.16
+    "BLEU envi_std": 0.01
+    "BLEU vien": 0.50
+    "BLEU vien_std": 0.01
+    "hLEPOR envi": 0.24
+    "hLEPOR envi_std": 0.01
+    "hLEPOR vien": 0.51
+    "hLEPOR vien_std": 0.00
+  GPT-4:
+    "BLEU envi": 0.17
+    "BLEU envi_std": 0.01
+    "BLEU vien": 0.51
+    "BLEU vien_std": 0.01
+    "hLEPOR envi": 0.25
+    "hLEPOR envi_std": 0.01
+    "hLEPOR vien": 0.53
+    "hLEPOR vien_std": 0.00

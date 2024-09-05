@@ -3,164 +3,108 @@ layout: default
 permalink: /leaderboard/vi/few-shot/language-modeling
 ---
 # Few-Shot Language Modeling Leaderboard
+{% assign lang = 'vi' %}
 
 <table class="table table-bordered table-sm w-100 dtHorizontalTable" cellspacing="0">
   <thead>
     <tr>
-      <th rowspan="2" class="text-center align-middle"><b>Models</b></th>
-      <th colspan="6" class="text-center"><b>MLQA-MLM</b></th>
-      <th colspan="6" class="text-center"><b>VSEC</b></th>
+      <th rowspan="2" class="text-center align-middle">
+        <b>Models</b>
+      </th>
+      {% for dataset in site.data.leaderboard[lang].few_shot.language_modeling %}
+      <th colspan="6" class="text-center">
+        <b>{{ dataset[0] }}</b>
+      </th>
+      {% endfor %}
     </tr>
     <tr>
-      <th class="text-center"><b>EM<span style="vertical-align: super;">↑</span></b></th>
-      <th class="text-center"><b>CER<span style="vertical-align: super;">↓</span></b></th>
-      <th class="text-center"><b>WER<span style="vertical-align: super;">↓</span></b></th>
-      <th class="text-center"><b>CED<span style="vertical-align: super;">↓</span></b></th>
-      <th class="text-center"><b>WED<span style="vertical-align: super;">↓</span></b></th>
-      <th class="text-center"><b>PLX<span style="vertical-align: super;">↓</span></b></th>
-      <th class="text-center"><b>EM<span style="vertical-align: super;">↑</span></b></th>
-      <th class="text-center"><b>CER<span style="vertical-align: super;">↓</span></b></th>
-      <th class="text-center"><b>WER<span style="vertical-align: super;">↓</span></b></th>
-      <th class="text-center"><b>CED<span style="vertical-align: super;">↓</span></b></th>
-      <th class="text-center"><b>WED<span style="vertical-align: super;">↓</span></b></th>
-      <th class="text-center"><b>PLX<span style="vertical-align: super;">↓</span></b></th>
+      {% for dataset in site.data.leaderboard[lang].few_shot.language_modeling %}
+      <th class="text-center"><b>EM↑</b></th>
+      <th class="text-center"><b>CER↓</b></th>
+      <th class="text-center"><b>WER↓</b></th>
+      <th class="text-center"><b>CED↓</b></th>
+      <th class="text-center"><b>WED↓</b></th>
+      <th class="text-center"><b>PLX↓</b></th>
+      {% endfor %}
     </tr>
   </thead>
   <tbody>
+    {% for model in site.data.leaderboard[lang].models.models %}
     <tr>
-      <td class="text-center"><b>URA-LLaMa 70B</b></td>
-      <td class="text-center" style="background-color: cyan;">0.01 ± 0.00</td>
-      <td class="text-center">0.54 ± 0.00</td>
-      <td class="text-center">0.66 ± 0.00</td>
-      <td class="text-center">669.74 ± 10.38</td>
-      <td class="text-center">153.04 ± 2.33</td>
-      <td class="text-center">1.32 ± 0.05</td>
-      <td class="text-center">0.33 ± 0.00</td>
-      <td class="text-center">0.11 ± 0.00</td>
-      <td class="text-center">0.13 ± 0.00</td>
-      <td class="text-center">15.09 ± 0.42</td>
-      <td class="text-center">4.05 ± 0.11</td>
-      <td class="text-center">1.13 ± 0.00</td>
+      <td class="text-center">
+        <b>{{ model }}</b>
+      </td>
+      {% for dataset in site.data.leaderboard[lang].few_shot.language_modeling %}
+        {% assign EM_best = 0 %}
+        {% assign CER_best = 1 %}
+        {% assign WER_best = 1 %}
+        {% assign CED_best = 10000 %} 
+        {% assign WED_best = 10000 %}
+        {% assign PLX_best = 10000 %}
+        {% for m in site.data.leaderboard[lang].models.models %}
+          {% if dataset[1][m].EM and dataset[1][m].EM > EM_best %}
+            {% assign EM_best = dataset[1][m].EM %}
+          {% endif %}
+          {% if dataset[1][m].CER and dataset[1][m].CER < CER_best %}
+            {% assign CER_best = dataset[1][m].CER %}
+          {% endif %}
+          {% if dataset[1][m].WER and dataset[1][m].WER < WER_best %}
+            {% assign WER_best = dataset[1][m].WER %}
+          {% endif %}
+          {% if dataset[1][m].CED and dataset[1][m].CED < CED_best %}
+            {% assign CED_best = dataset[1][m].CED %}
+          {% endif %}
+          {% if dataset[1][m].WED and dataset[1][m].WED < WED_best %}
+            {% assign WED_best = dataset[1][m].WED %}
+          {% endif %}
+          {% if dataset[1][m].PLX and dataset[1][m].PLX < PLX_best %}
+            {% assign PLX_best = dataset[1][m].PLX %}
+          {% endif %}
+        {% endfor %}
+        <td class="text-center" {% if dataset[1][model].EM == EM_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].EM %}
+          {{ dataset[1][model].EM | round: 2 }} ± {{ dataset[1][model].EM_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model].CER == CER_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].CER %}
+          {{ dataset[1][model].CER | round: 2 }} ± {{ dataset[1][model].CER_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model].WER == WER_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].WER %}
+          {{ dataset[1][model].WER | round: 2 }} ± {{ dataset[1][model].WER_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model].CED == CED_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].CED %}
+          {{ dataset[1][model].CED | round: 2 }} ± {{ dataset[1][model].CED_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model].WED == WED_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].WED %}
+          {{ dataset[1][model].WED | round: 2 }} ± {{ dataset[1][model].WED_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model].PLX == PLX_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].PLX %}
+          {{ dataset[1][model].PLX | round: 2 }} ± {{ dataset[1][model].PLX_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+      {% endfor %}
     </tr>
-    <tr>
-      <td class="text-center"><b>URA-LLaMa 13B</b></td>
-      <td class="text-center" style="background-color: cyan;">0.01 ± 0.00</td>
-      <td class="text-center">0.45 ± 0.01</td>
-      <td class="text-center">0.61 ± 0.01</td>
-      <td class="text-center">559.64 ± 11.23</td>
-      <td class="text-center">136.97 ± 2.68</td>
-      <td class="text-center">1.49 ± 0.10</td>
-      <td class="text-center" style="background-color: cyan;">0.35 ± 0.00</td>
-      <td class="text-center" style="background-color: cyan;">0.02 ± 0.00</td>
-      <td class="text-center" style="background-color: cyan;">0.04 ± 0.00</td>
-      <td class="text-center" style="background-color: cyan;">2.81 ± 0.12</td>
-      <td class="text-center" style="background-color: cyan;">1.18 ± 0.03</td>
-      <td class="text-center">1.15 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>URA-LLaMa 7B</b></td>
-      <td class="text-center" style="background-color: cyan;">0.01 ± 0.00</td>
-      <td class="text-center" style="background-color: cyan;">0.40 ± 0.01</td>
-      <td class="text-center" style="background-color: cyan;">0.55 ± 0.01</td>
-      <td class="text-center" style="background-color: cyan;">498.36 ± 11.01</td>
-      <td class="text-center" style="background-color: cyan;">118.11 ± 2.58</td>
-      <td class="text-center" style="background-color: cyan;">1.24 ± 0.01</td>
-      <td class="text-center">0.22 ± 0.00</td>
-      <td class="text-center">0.32 ± 0.01</td>
-      <td class="text-center">0.33 ± 0.01</td>
-      <td class="text-center">41.89 ± 1.54</td>
-      <td class="text-center">10.10 ± 0.34</td>
-      <td class="text-center">1.07 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>LLaMa-2 13B</b></td>
-      <td class="text-center" style="background-color: cyan;">0.01 ± 0.00</td>
-      <td class="text-center">0.74 ± 0.00</td>
-      <td class="text-center">0.87 ± 0.00</td>
-      <td class="text-center">760.98 ± 11.91</td>
-      <td class="text-center">186.90 ± 2.85</td>
-      <td class="text-center">1.24 ± 0.03</td>
-      <td class="text-center">0.16 ± 0.00</td>
-      <td class="text-center">0.03 ± 0.00</td>
-      <td class="text-center">0.05 ± 0.00</td>
-      <td class="text-center">3.38 ± 0.16</td>
-      <td class="text-center">1.51 ± 0.04</td>
-      <td class="text-center" style="background-color: cyan;">1.01 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>LLaMa-2 7B</b></td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.81 ± 0.00</td>
-      <td class="text-center">0.98 ± 0.00</td>
-      <td class="text-center">769.36 ± 10.51</td>
-      <td class="text-center">198.53 ± 2.57</td>
-      <td class="text-center">1.74 ± 0.19</td>
-      <td class="text-center">0.12 ± 0.00</td>
-      <td class="text-center">0.36 ± 0.01</td>
-      <td class="text-center">0.39 ± 0.01</td>
-      <td class="text-center">47.50 ± 0.86</td>
-      <td class="text-center">11.80 ± 0.19</td>
-      <td class="text-center">1.06 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>Vietcuna 7B</b></td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">1.04 ± 0.00</td>
-      <td class="text-center">1.06 ± 0.00</td>
-      <td class="text-center">935.65 ± 12.47</td>
-      <td class="text-center">204.98 ± 2.79</td>
-      <td class="text-center">1.40 ± 0.00</td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">8.00 ± 0.07</td>
-      <td class="text-center">8.01 ± 0.07</td>
-      <td class="text-center">1063.93 ± 7.64</td>
-      <td class="text-center">241.74 ± 1.74</td>
-      <td class="text-center">1.46 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>MixSUra 8x7B</b></td>
-      <td class="text-center">0.00 ± -</td>
-      <td class="text-center">0.55 ± -</td>
-      <td class="text-center">0.63 ± -</td>
-      <td class="text-center">526.79 ± -</td>
-      <td class="text-center">131.02 ± -</td>
-      <td class="text-center">1.00 ± -</td>
-      <td class="text-center">0.08 ± -</td>
-      <td class="text-center">0.19 ± -</td>
-      <td class="text-center">0.28 ± -</td>
-      <td class="text-center">25.13 ± -</td>
-      <td class="text-center">8.58 ± -</td>
-      <td class="text-center">1.00 ± -</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>GPT-3.5</b></td>
-      <td class="text-center">0.04 ± 0.00</td>
-      <td class="text-center">0.28 ± 0.01</td>
-      <td class="text-center">0.44 ± 0.01</td>
-      <td class="text-center">387.37 ± 10.86</td>
-      <td class="text-center">92.78 ± 2.46</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.66 ± 0.00</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.01 ± 0.00</td>
-      <td class="text-center">0.02 ± 0.00</td>
-      <td class="text-center">1.63 ± 0.08</td>
-      <td class="text-center">0.61 ± 0.02</td>
-      <td class="text-center">-</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>GPT-4</b></td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.08 ± 0.00</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.23 ± 0.01</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.40 ± 0.01</td>
-      <td class="text-center" style="background-color: #f0f0f0;">336.53 ± 10.18</td>
-      <td class="text-center" style="background-color: #f0f0f0;">83.55 ± 2.34</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.75 ± 0.00</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.01 ± 0.00</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.01 ± 0.00</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.89 ± 0.04</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.37 ± 0.01</td>
-      <td class="text-center">-</td>
-    </tr>
+    {% endfor %}
   </tbody>
 </table>
