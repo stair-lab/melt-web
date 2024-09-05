@@ -12,7 +12,7 @@
   <title>MELT</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="https://ai.stanford.edu/~sttruong/melt/assets/css/main.css" rel="stylesheet" />
+  <link href="/assets/css/main.css" rel="stylesheet" />
 </head>
 
 
@@ -20,7 +20,7 @@
   <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark py-3">
   <div class="container">
-    <a class="navbar-brand js-scroll-trigger font-weight-bold" href="https://ai.stanford.edu/~sttruong/melt/">
+    <a class="navbar-brand js-scroll-trigger font-weight-bold" href="/">
       MELT
     </a>
     <button
@@ -38,11 +38,11 @@
       <ul class="navbar-nav ml-auto">
         
         <li class="nav-item ">
-          <a class="nav-link" href="https://ai.stanford.edu/~sttruong/melt/">Home</a>
+          <a class="nav-link" href="/">Home</a>
         </li>
         
         <li class="nav-item active  ">
-          <a class="nav-link" href="https://ai.stanford.edu/~sttruong/melt/leaderboard/">Leaderboard</a>
+          <a class="nav-link" href="/leaderboard/">Leaderboard</a>
         </li>
         
         <li class="nav-item ">
@@ -58,11 +58,11 @@
         </li>
         
         <li class="nav-item ">
-          <a class="nav-link" href="https://ai.stanford.edu/~sttruong/melt/prompt/">Prompt</a>
+          <a class="nav-link" href="/prompt/">Prompt</a>
         </li>
         
         <li class="nav-item ">
-          <a class="nav-link" href="https://ai.stanford.edu/~sttruong/melt/demo/">Demo</a>
+          <a class="nav-link" href="/demo/">Demo</a>
         </li>
         
       </ul>
@@ -93,260 +93,14 @@
   <thead>
     <tr>
       <th rowspan="2" class="text-center align-middle"><b>Models</b></th>
-      <th colspan="5" class="text-center"><b>PhoMT (En - Vi)</b></th>
-      <th colspan="5" class="text-center"><b>OPUS100 (En - Vi)</b></th>
+      
     </tr>
     <tr>
-      <th class="text-center"><b>DRR$→|</b></th>
-      <th class="text-center"><b>DRG$→|</b></th>
-      <th class="text-center"><b>SAR$→|</b></th>
-      <th class="text-center"><b>SAG$→|</b></th>
-      <th class="text-center"><b>Tox<span style="vertical-align: super;">↓</span></b></th>
-      <th class="text-center"><b>DRR$→|</b></th>
-      <th class="text-center"><b>DRG$→|</b></th>
-      <th class="text-center"><b>SAR$→|</b></th>
-      <th class="text-center"><b>SAG$→|</b></th>
-      <th class="text-center"><b>Tox<span style="vertical-align: super;">↓</span></b></th>
+      
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td class="text-center"><b>URA-LLaMa 70B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.03 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.30 ± 0.01</td>
-      <td class="text-center">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.27 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.47 ± 0.01</td>
-      <td class="text-center">0.06 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>URA-LLaMa 13B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.09 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.33 ± 0.01</td>
-      <td class="text-center">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.27 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.43 ± 0.02</td>
-      <td class="text-center">0.07 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>URA-LLaMa 7B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.13 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.33 ± 0.01</td>
-      <td class="text-center">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.18 ± 0.03</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.47 ± 0.01</td>
-      <td class="text-center">0.07 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>LLaMa-2 13B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.08 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.33 ± 0.02</td>
-      <td class="text-center">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.31 ± 0.02</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.47 ± 0.01</td>
-      <td class="text-center">0.06 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>LLaMa-2 7B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.17 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.29 ± 0.01</td>
-      <td class="text-center" style="background-color: cyan;">0.04 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.21 ± 0.02</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.45 ± 0.02</td>
-      <td class="text-center" style="background-color: cyan;">0.05 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>Vietcuna 7B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.18 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.36 ± 0.01</td>
-      <td class="text-center" style="background-color: cyan;">0.04 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.16 ± 0.03</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.43 ± 0.02</td>
-      <td class="text-center">0.07 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>GPT-3.5</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.11 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.34 ± 0.01</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.16 ± 0.03</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.43 ± 0.03</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.07 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>GPT-4</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.09 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.34 ± 0.01</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.14 ± 0.03</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.41 ± 0.01</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.07 ± 0.00</td>
-    </tr>
-  </tbody>
-</table>
-<hr />
-<p>layout: default
-permalink: /leaderboard/kr/bias-toxicity/translation
-—</p>
-<h1 id="bias-toxicity-translation-leaderboard-1">Bias-Toxicity Translation Leaderboard</h1>
-
-<table class="table table-bordered table-sm w-100 dtHorizontalTable" cellspacing="0">
-  <thead>
-    <tr>
-      <th rowspan="2" class="text-center align-middle"><b>Models</b></th>
-      <th colspan="5" class="text-center"><b>PhoMT (En $\to$ Vi)</b></th>
-      <th colspan="5" class="text-center"><b>OPUS100 (En $\to$ Vi)</b></th>
-    </tr>
-    <tr>
-      <th class="text-center"><b>DRR$\to\mid$</b></th>
-      <th class="text-center"><b>DRG$\to\mid$</b></th>
-      <th class="text-center"><b>SAR$\to\mid$</b></th>
-      <th class="text-center"><b>SAG$\to\mid$</b></th>
-      <th class="text-center"><b>Tox<span style="vertical-align: super;">↓</span></b></th>
-      <th class="text-center"><b>DRR$\to\mid$</b></th>
-      <th class="text-center"><b>DRG$\to\mid$</b></th>
-      <th class="text-center"><b>SAR$\to\mid$</b></th>
-      <th class="text-center"><b>SAG$\to\mid$</b></th>
-      <th class="text-center"><b>Tox<span style="vertical-align: super;">↓</span></b></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="text-center"><b>URA-LLaMa 70B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.03 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.30 ± 0.01</td>
-      <td class="text-center">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.27 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.47 ± 0.01</td>
-      <td class="text-center">0.06 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>URA-LLaMa 13B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.09 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.33 ± 0.01</td>
-      <td class="text-center">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.27 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.43 ± 0.02</td>
-      <td class="text-center">0.07 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>URA-LLaMa 7B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.13 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.33 ± 0.01</td>
-      <td class="text-center">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.18 ± 0.03</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.47 ± 0.01</td>
-      <td class="text-center">0.07 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>LLaMa-2 13B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.08 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.33 ± 0.02</td>
-      <td class="text-center">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.31 ± 0.02</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.47 ± 0.01</td>
-      <td class="text-center">0.06 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>LLaMa-2 7B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.17 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.29 ± 0.01</td>
-      <td class="text-center" style="background-color: cyan;">0.04 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.21 ± 0.02</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.45 ± 0.02</td>
-      <td class="text-center" style="background-color: cyan;">0.05 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>Vietcuna 7B</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.18 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: cyan;">0.36 ± 0.01</td>
-      <td class="text-center" style="background-color: cyan;">0.04 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.16 ± 0.03</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.43 ± 0.02</td>
-      <td class="text-center">0.07 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>GPT-3.5</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.11 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.34 ± 0.01</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.16 ± 0.03</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.43 ± 0.03</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.07 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>GPT-4</b></td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.09 ± 0.01</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.34 ± 0.01</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.05 ± 0.00</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.14 ± 0.03</td>
-      <td class="text-center">-</td>
-      <td class="text-center">0.41 ± 0.01</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.07 ± 0.00</td>
-    </tr>
+    
   </tbody>
 </table>
 
@@ -363,15 +117,15 @@ permalink: /leaderboard/kr/bias-toxicity/translation
 </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="https://ai.stanford.edu/~sttruong/melt/assets/vendor/jquery/jquery.min.js"></script>
-  <script type="text/javascript" src="https://ai.stanford.edu/~sttruong/melt/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript" src="https://ai.stanford.edu/~sttruong/melt/assets/vendor/dataTables/dataTables.min.js" type="text/javascript"></script>
-  <script type="text/javascript" src="https://ai.stanford.edu/~sttruong/melt/assets/vendor/dataTables/dataTables.bootstrap4.min.js" type="text/javascript"></script>
-  <script type="text/javascript" src="https://ai.stanford.edu/~sttruong/melt/assets/vendor/dataTables/dataTables.fixedColumns.js" type="text/javascript"></script>
-  <script type="text/javascript" src="https://ai.stanford.edu/~sttruong/melt/assets/vendor/dataTables/fixedColumns.dataTables.js" type="text/javascript"></script>
+  <script type="text/javascript" src="/assets/vendor/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/assets/vendor/dataTables/dataTables.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="/assets/vendor/dataTables/dataTables.bootstrap4.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="/assets/vendor/dataTables/dataTables.fixedColumns.js" type="text/javascript"></script>
+  <script type="text/javascript" src="/assets/vendor/dataTables/fixedColumns.dataTables.js" type="text/javascript"></script>
 
   <!-- Custom scripts for this template -->
-  <script type="text/javascript" src="https://ai.stanford.edu/~sttruong/melt/assets/js/main.js"></script>
+  <script type="text/javascript" src="/assets/js/main.js"></script>
 </body>
 
 </html>

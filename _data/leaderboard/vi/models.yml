@@ -1,0 +1,11 @@
+models:
+  - URA-LLaMa 70B
+  - URA-LLaMa 13B
+  - URA-LLaMa 7B
+  - LLaMa-2 13B
+  - LLaMa-2 7B
+  - Vietcuna 7B
+  - GPT-3.5
+  - GPT-4 
+  - Gemini Pro
+  - MixSUra

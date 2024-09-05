@@ -152,6 +152,7 @@ Below are our detail evaluation results, please choose the task and scenario to 
       <th><b>Zero-shot</b></th>
       <th><b>Few-shot</b></th>
       <th><b>Weaker Prompt</b></th>
+      <th><b>Medium Prompt</b></th>
       <th><b>Fairness Aware</b></th>
       <th><b>Robustness Aware</b></th>
       <th><b>Chain-of-Thought</b></th>

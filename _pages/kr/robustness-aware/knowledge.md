@@ -3,114 +3,128 @@ layout: default
 permalink: /leaderboard/kr/robustness-aware/knowledge
 ---
 # Robustness-Aware Knowledge Leaderboard
+{% assign lang = 'kr' %} 
 
 <table class="table table-bordered table-sm w-100 dtHorizontalTable" cellspacing="0">
-    <thead>
-        <tr>
-            <th rowspan="2" class="text-center align-middle"><b>Models</b></th>
-            <th colspan="2" class="text-center"><b>ZaloE2E</b></th>
-            <th colspan="5" class="text-center"><b>ViMMRC</b></th>
-        </tr>
-        <tr>
-            <th class="text-center"><b>EM<span style="vertical-align: super;">↑</span></b></th>
-            <th class="text-center"><b>F1<span style="vertical-align: super;">↑</span></b></th>
-            <th class="text-center"><b>AC<span style="vertical-align: super;">↑</span></b></th>
-            <th class="text-center"><b>F1<span style="vertical-align: super;">↑</span></b></th>
-            <th class="text-center"><b>AR<span style="vertical-align: super;">↑</span></b></th>
-            <th class="text-center"><b>ECE<span style="vertical-align: super;">↓</span></b></th>
-            <th class="text-center"><b>A@10<span style="vertical-align: super;">↑</span></b></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="text-center"><b>URA-LLaMa 70B</b></td>
-            <td class="text-center" style="background-color: cyan;">0.23 ± 0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.37 ± 0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.65 ± 0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.53 ± 0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.84 ± 0.00</td>
-            <td class="text-center">0.11 ± 0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.77 ± 0.00</td>
-        </tr>
-        <tr>
-            <td class="text-center"><b>URA-LLaMa 13B</b></td>
-            <td class="text-center">0.18 ± 0.00</td>
-            <td class="text-center">0.30 ± 0.00</td>
-            <td class="text-center">0.41 ± 0.00</td>
-            <td class="text-center">0.34 ± 0.00</td>
-            <td class="text-center">0.61 ± 0.00</td>
-            <td class="text-center">0.22 ± 0.00</td>
-            <td class="text-center">0.58 ± 0.00</td>
-        </tr>
-        <tr>
-            <td class="text-center"><b>URA-LLaMa 7B</b></td>
-            <td class="text-center">0.10 ± 0.00</td>
-            <td class="text-center">0.18 ± 0.00</td>
-            <td class="text-center">0.33 ± 0.02</td>
-            <td class="text-center">0.28 ± 0.02</td>
-            <td class="text-center">0.61 ± 0.01</td>
-            <td class="text-center">0.19 ± 0.02</td>
-            <td class="text-center">0.33 ± 0.06</td>
-        </tr>
-        <tr>
-            <td class="text-center"><b>LLaMa-2 13B</b></td>
-            <td class="text-center">0.13 ± 0.00</td>
-            <td class="text-center">0.21 ± 0.00</td>
-            <td class="text-center">0.39 ± 0.00</td>
-            <td class="text-center">0.31 ± 0.00</td>
-            <td class="text-center">0.56 ± 0.00</td>
-            <td class="text-center">0.46 ± 0.00</td>
-            <td class="text-center">0.33 ± 0.00</td>
-        </tr>
-        <tr>
-            <td class="text-center"><b>LLaMa-2 7B</b></td>
-            <td class="text-center">0.02 ± 0.00</td>
-            <td class="text-center">0.05 ± 0.00</td>
-            <td class="text-center">0.26 ± 0.01</td>
-            <td class="text-center">0.20 ± 0.01</td>
-            <td class="text-center">0.51 ± 0.01</td>
-            <td class="text-center">0.46 ± 0.01</td>
-            <td class="text-center">0.13 ± 0.03</td>
-        </tr>
-        <tr>
-            <td class="text-center"><b>Vietcuna 7B</b></td>
-            <td class="text-center">0.05 ± 0.00</td>
-            <td class="text-center">0.15 ± 0.00</td>
-            <td class="text-center">0.26 ± 0.01</td>
-            <td class="text-center">0.14 ± 0.00</td>
-            <td class="text-center">0.50 ± 0.00</td>
-            <td class="text-center" style="background-color: cyan;">0.01 ± 0.01</td>
-            <td class="text-center">0.21 ± 0.07</td>
-        </tr>
-        <tr>
-            <td class="text-center"><b>MixSUra 8x7B</b></td>
-            <td class="text-center">0.13 ± -</td>
-            <td class="text-center">0.24 ± -</td>
-            <td class="text-center">0.57 ± -</td>
-            <td class="text-center">0.45 ± -</td>
-            <td class="text-center">0.53 ± -</td>
-            <td class="text-center">0.35 ± -</td>
-            <td class="text-center">0.58 ± -</td>
-        </tr>
-        <tr>
-            <td class="text-center"><b>GPT-3.5</b></td>
-            <td class="text-center" style="background-color: #f0f0f0;">0.45 ± 0.01</td>
-            <td class="text-center" style="background-color: #f0f0f0;">0.61 ± 0.01</td>
-            <td class="text-center">0.90 ± 0.01</td>
-            <td class="text-center">0.72 ± 0.04</td>
-            <td class="text-center">-</td>
-            <td class="text-center" style="background-color: #f0f0f0;">0.65 ± 0.01</td>
-            <td class="text-center">0.88 ± 0.07</td>
-        </tr>
-        <tr>
-            <td class="text-center"><b>GPT-4</b></td>
-            <td class="text-center">0.44 ± 0.01</td>
-            <td class="text-center" style="background-color: #f0f0f0;">0.61 ± 0.01</td>
-            <td class="text-center" style="background-color: #f0f0f0;">0.91 ± 0.01</td>
-            <td class="text-center" style="background-color: #f0f0f0;">0.73 ± 0.07</td>
-            <td class="text-center">-</td>
-            <td class="text-center" style="background-color: #f0f0f0;">0.66 ± 0.07</td>
-            <td class="text-center" style="background-color: #f0f0f0;">0.88 ± 0.04</td>
-        </tr>
-    </tbody>
+  <thead>
+    <tr>
+      <th rowspan="2" class="text-center align-middle">
+        <b>Models</b>
+      </th>
+      {% for dataset in site.data.leaderboard[lang].robustness_aware.knowledge %}
+      {% if dataset[1].num_fields == 2 %}
+      <th colspan="2" class="text-center">
+        <b>{{ dataset[0] }}</b>
+      </th>
+      {% else %}
+      <th colspan="5" class="text-center">
+        <b>{{ dataset[0] }}</b>
+      </th>
+      {% endif %}
+      {% endfor %}
+    </tr>
+    <tr>
+      {% for dataset in site.data.leaderboard[lang].robustness_aware.knowledge %}
+      {% if dataset[1].num_fields == 2 %}
+      <th class="text-center"><b>EM↑</b></th>
+      <th class="text-center"><b>F1↑</b></th>
+      {% else %}
+      <th class="text-center"><b>AC↑</b></th>
+      <th class="text-center"><b>F1↑</b></th>
+      <th class="text-center"><b>AR↑</b></th>
+      <th class="text-center"><b>ECE↓</b></th>
+      <th class="text-center"><b>A@10↑</b></th>
+      {% endif %}
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for model in site.data.leaderboard[lang].models.models %}
+    <tr>
+      <td class="text-center">
+        <b>{{ model }}</b> 
+      </td>
+      {% for dataset in site.data.leaderboard[lang].robustness_aware.knowledge %}
+        {% assign EM_best = 0 %} 
+        {% assign F1_best = 0 %} 
+        {% assign AC_best = 0 %} 
+        {% assign AR_best = 0 %} 
+        {% assign ECE_best = 1 %}
+        {% assign A10_best = 0 %}
+        {% for m in site.data.leaderboard[lang].models.models %}
+          {% if dataset[1][m].EM and dataset[1][m].EM > EM_best %}
+            {% assign EM_best = dataset[1][m].EM %}
+          {% endif %}
+          {% if dataset[1][m].F1 and dataset[1][m].F1 > F1_best %}
+            {% assign F1_best = dataset[1][m].F1 %}
+          {% endif %} 
+          {% if dataset[1][m].AC and dataset[1][m].AC > AC_best %}
+            {% assign AC_best = dataset[1][m].AC %}
+          {% endif %}
+          {% if dataset[1][m].AR and dataset[1][m].AR > AR_best %}
+            {% assign AR_best = dataset[1][m].AR %}
+          {% endif %}
+          {% if dataset[1][m].ECE and dataset[1][m].ECE < ECE_best %}
+            {% assign ECE_best = dataset[1][m].ECE %}
+          {% endif %}
+          {% if dataset[1][m]["A@10"] and dataset[1][m]["A@10"] > A10_best %}
+            {% assign A10_best = dataset[1][m]["A@10"] %}
+          {% endif %}
+        {% endfor %}
+        {% if dataset[1].num_fields == 2 %}
+        <td class="text-center" {% if dataset[1][model].EM == EM_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].EM %}
+          {{ dataset[1][model].EM | round: 2 }} ± {{ dataset[1][model].EM_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model].F1 == F1_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].F1 %}
+          {{ dataset[1][model].F1 | round: 2 }} ± {{ dataset[1][model].F1_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td> 
+        {% else %}
+        <td class="text-center" {% if dataset[1][model].AC == AC_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].AC %}
+          {{ dataset[1][model].AC | round: 2 }} ± {{ dataset[1][model].AC_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model].F1 == F1_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].F1 %}
+          {{ dataset[1][model].F1 | round: 2 }} ± {{ dataset[1][model].F1_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td> 
+        <td class="text-center" {% if dataset[1][model].AR == AR_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].AR %}
+          {{ dataset[1][model].AR | round: 2 }} ± {{ dataset[1][model].AR_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td> 
+        <td class="text-center" {% if dataset[1][model].ECE == ECE_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].ECE %}
+          {{ dataset[1][model].ECE | round: 2 }} ± {{ dataset[1][model].ECE_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td> 
+        <td class="text-center" {% if dataset[1][model]["A@10"] == A10_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model]["A@10"] %}
+          {{ dataset[1][model]["A@10"] | round: 2 }} ± {{ dataset[1][model]["A@10_std"] | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td> 
+        {% endif %}
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </tbody>
 </table>

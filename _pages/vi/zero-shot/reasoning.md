@@ -3,123 +3,72 @@ layout: default
 permalink: /leaderboard/vi/zero-shot/reasoning
 ---
 # Zero-Shot Reasoning Leaderboard
+{% assign lang = 'vi' %} 
 
 <table class="table table-bordered table-sm w-100 dtHorizontalTable" cellspacing="0">
   <thead>
     <tr>
-      <th rowspan="2" class="text-center align-middle"><b>Models</b></th>
-      <th colspan="3" class="text-center"><b>SR - Natural</b></th>
-      <th colspan="3" class="text-center"><b>SR - Abstract symbol</b></th>
-      <th colspan="3" class="text-center"><b>MATH</b></th>
+      <th rowspan="2" class="text-center align-middle">
+        <b>Models</b>
+      </th>
+      {% for dataset in site.data.leaderboard[lang].zero_shot.reasoning %}
+      <th colspan="3" class="text-center">
+        <b>{{ dataset[0] }}</b>
+      </th>
+      {% endfor %}
     </tr>
     <tr>
-      <th class="text-center"><b>EM<span style="vertical-align: super;">↑</span></b></th>
-      <th class="text-center"><b>F1<span style="vertical-align: super;">↑</span></b></th>
-      <th class="text-center"><b>Equ.<span style="vertical-align: super;">↑</span></b></th>
-      <th class="text-center"><b>EM<span style="vertical-align: super;">↑</span></b></th>
-      <th class="text-center"><b>F1<span style="vertical-align: super;">↑</span></b></th>
-      <th class="text-center"><b>Equ.<span style="vertical-align: super;">↑</span></b></th>
-      <th class="text-center"><b>EM<span style="vertical-align: super;">↑</span></b></th>
-      <th class="text-center"><b>F1<span style="vertical-align: super;">↑</span></b></th>
-      <th class="text-center"><b>Equ.<span style="vertical-align: super;">↑</span></b></th>
+      {% for dataset in site.data.leaderboard[lang].zero_shot.reasoning %}
+      <th class="text-center"><b>EM↑</b></th>
+      <th class="text-center"><b>F1↑</b></th>
+      <th class="text-center"><b>Equ↑</b></th>
+      {% endfor %}
     </tr>
   </thead>
   <tbody>
+    {% for model in site.data.leaderboard[lang].models.models %}
     <tr>
-      <td class="text-center"><b>URA-LLaMa 70B</b></td>
-      <td class="text-center" style="background-color: cyan;">0.06 ± 0.00</td>
-      <td class="text-center" style="background-color: cyan;">0.34 ± 0.00</td>
-      <td class="text-center" style="background-color: cyan;">0.06 ± 0.00</td>
-      <td class="text-center">0.02 ± 0.00</td>
-      <td class="text-center" style="background-color: cyan;">0.24 ± 0.00</td>
-      <td class="text-center">0.01 ± 0.00</td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.01 ± 0.00</td>
-      <td class="text-center" style="background-color: cyan;">0.24 ± 0.02</td>
+      <td class="text-center">
+        <b>{{ model }}</b> 
+      </td>
+      {% for dataset in site.data.leaderboard[lang].zero_shot.reasoning %}
+        {% assign EM_best = 0 %} 
+        {% assign F1_best = 0 %}
+        {% assign Equ_best = 0 %} 
+        {% for m in site.data.leaderboard[lang].models.models %}
+          {% if dataset[1][m].EM and dataset[1][m].EM > EM_best %}
+            {% assign EM_best = dataset[1][m].EM %}
+          {% endif %}
+          {% if dataset[1][m].F1 and dataset[1][m].F1 > F1_best %}
+            {% assign F1_best = dataset[1][m].F1 %}
+          {% endif %}
+          {% if dataset[1][m]["Equ"] and dataset[1][m]["Equ"] > Equ_best %}
+            {% assign Equ_best = dataset[1][m]["Equ"] %}
+          {% endif %}
+        {% endfor %}
+        <td class="text-center" {% if dataset[1][model].EM == EM_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].EM %}
+          {{ dataset[1][model].EM | round: 2 }} ± {{ dataset[1][model].EM_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model].F1 == F1_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].F1 %}
+          {{ dataset[1][model].F1 | round: 2 }} ± {{ dataset[1][model].F1_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model]["Equ"] == Equ_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model]["Equ"] %}
+          {{ dataset[1][model]["Equ"] | round: 2 }} ± {{ dataset[1][model]["Equ_std"] | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+      {% endfor %}
     </tr>
-    <tr>
-      <td class="text-center"><b>URA-LLaMa 13B</b></td>
-      <td class="text-center">0.01 ± 0.00</td>
-      <td class="text-center">0.31 ± 0.00</td>
-      <td class="text-center">0.02 ± 0.00</td>
-      <td class="text-center">0.02 ± 0.00</td>
-      <td class="text-center" style="background-color: cyan;">0.24 ± 0.00</td>
-      <td class="text-center">0.01 ± 0.00</td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.14 ± 0.02</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>URA-LLaMa 7B</b></td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.26 ± 0.00</td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.01 ± 0.00</td>
-      <td class="text-center">0.17 ± 0.00</td>
-      <td class="text-center" style="background-color: cyan;">0.00 ± 0.00</td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.05 ± 0.01</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>LLaMa-2 13B</b></td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.06 ± 0.00</td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.02 ± 0.00</td>
-      <td class="text-center">0.19 ± 0.00</td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.16 ± 0.02</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>LLaMa-2 7B</b></td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.04 ± 0.00</td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.05 ± 0.00</td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.06 ± 0.01</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>Vietcuna 7B</b></td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.04 ± 0.00</td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.10 ± 0.00</td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.01 ± 0.00</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>GPT-3.5</b></td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.21 ± 0.00</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.59 ± 0.00</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.32 ± 0.00</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.09 ± 0.00</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.28 ± 0.00</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.13 ± 0.00</td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.01 ± 0.00</td>
-      <td class="text-center">0.72 ± 0.02</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>GPT-4</b></td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.21 ± 0.00</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.59 ± 0.00</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.32 ± 0.00</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.09 ± 0.00</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.28 ± 0.00</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.13 ± 0.00</td>
-      <td class="text-center">0.00 ± 0.00</td>
-      <td class="text-center">0.01 ± 0.00</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.76 ± 0.02</td>
-    </tr>
+    {% endfor %}
   </tbody>
 </table>

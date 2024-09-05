@@ -1,6 +1,7 @@
 - zero-shot
 - few-shot
 - weaker-prompt
+- medium-prompt
 - fairness-aware
 - robustness-aware
 - chain-of-thought

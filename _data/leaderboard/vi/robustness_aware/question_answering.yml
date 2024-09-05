@@ -1,0 +1,92 @@
+XQuAD:
+    URA-LLaMa 70B:
+      EM: 0.01
+      EM_std: 0.00
+      F1: 0.17
+      F1_std: 0.00
+    URA-LLaMa 13B:
+      EM: 0.00
+      EM_std: 0.00
+      F1: 0.09
+      F1_std: 0.00
+    URA-LLaMa 7B:
+      EM: 0.00
+      EM_std: 0.00
+      F1: 0.09
+      F1_std: 0.00
+    LLaMa-2 13B:
+      EM: 0.00
+      EM_std: 0.00
+      F1: 0.02
+      F1_std: 0.00
+    LLaMa-2 7B:
+      EM: 0.00
+      EM_std: 0.00
+      F1: 0.02
+      F1_std: 0.00
+    Vietcuna 7B:
+      EM: 0.00
+      EM_std: 0.00
+      F1: 0.06
+      F1_std: 0.00
+    MixSUra:
+      EM: 0.00
+      EM_std: null
+      F1: 0.11
+      F1_std: null
+    GPT-3.5:
+      EM: 0.00
+      EM_std: 0.00
+      F1: 0.19
+      F1_std: 0.00
+    GPT-4:
+      EM: 0.00
+      EM_std: 0.00
+      F1: 0.24
+      F1_std: 0.00
+MLQA:
+    URA-LLaMa 70B:
+      EM: 0.01
+      EM_std: 0.00
+      F1: 0.18
+      F1_std: 0.00
+    URA-LLaMa 13B:
+      EM: 0.00
+      EM_std: 0.00
+      F1: 0.10
+      F1_std: 0.00
+    URA-LLaMa 7B:
+      EM: 0.00
+      EM_std: 0.00
+      F1: 0.10
+      F1_std: 0.00
+    LLaMa-2 13B:
+      EM: 0.00
+      EM_std: 0.00
+      F1: 0.03
+      F1_std: 0.00
+    LLaMa-2 7B:
+      EM: 0.00
+      EM_std: 0.00
+      F1: 0.02
+      F1_std: 0.00
+    Vietcuna 7B:
+      EM: 0.00
+      EM_std: 0.00
+      F1: 0.05
+      F1_std: 0.00
+    MixSUra:
+      EM: 0.00
+      EM_std: null
+      F1: 0.12
+      F1_std: null
+    GPT-3.5:
+      EM: 0.00
+      EM_std: 0.00
+      F1: 0.20
+      F1_std: 0.00
+    GPT-4:
+      EM: 0.00
+      EM_std: 0.00
+      F1: 0.25
+      F1_std: 0.00

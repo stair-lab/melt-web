@@ -4,90 +4,96 @@ permalink: /leaderboard/kr/randomized-choice/knowledge
 ---
 
 # Randomized-Choice Knowledge Leaderboard
+{% assign lang = 'kr' %}
 
 <table class="table table-bordered table-sm w-100 dtHorizontalTable" cellspacing="0">
   <thead>
     <tr>
-      <th rowspan="2" class="text-center align-middle"><b>Models</b></th>
-      <th class="text-center"><b>AC <span style="vertical-align: super;">↑</span></b></th>
-      <th class="text-center"><b>F1 <span style="vertical-align: super;">↑</span></b></th>
-      <th class="text-center"><b>AR <span style="vertical-align: super;">↑</span></b></th>
-      <th class="text-center"><b>ECE <span style="vertical-align: super;">↓</span></b></th>
-      <th class="text-center"><b>A@10 <span style="vertical-align: super;">↑</span></b></th>
+      <th rowspan="2" class="text-center align-middle">
+        <b>Models</b>
+      </th>
+      {% for dataset in site.data.leaderboard[lang].randomized_choice.knowledge %}
+      <th colspan="5" class="text-center">
+        <b>{{ dataset[0] }}</b>
+      </th>
+      {% endfor %}
+    </tr>
+    <tr>
+      {% for dataset in site.data.leaderboard[lang].randomized_choice.knowledge %}
+      <th class="text-center"><b>AC↑</b></th>
+      <th class="text-center"><b>F1↑</b></th>
+      <th class="text-center"><b>AR↑</b></th>
+      <th class="text-center"><b>ECE↓</b></th>
+      <th class="text-center"><b>A@10↑</b></th>
+      {% endfor %}
     </tr>
   </thead>
   <tbody>
+    {% for model in site.data.leaderboard[lang].models.models %}
     <tr>
-      <td class="text-center"><b>Our 70B</b></td>
-      <td class="text-center" style="background-color: cyan;">0.76 ± 0.02</td>
-      <td class="text-center" style="background-color: cyan;">0.76 ± 0.02</td>
-      <td class="text-center" style="background-color: cyan;">0.78 ± 0.01</td>
-      <td class="text-center">0.14 ± 0.02</td>
-      <td class="text-center" style="background-color: cyan;">0.94 ± 0.04</td>
+      <td class="text-center">
+        <b>{{ model }}</b> 
+      </td>
+      {% for dataset in site.data.leaderboard[lang].randomized_choice.knowledge %}
+        {% assign AC_best = 0 %} 
+        {% assign F1_best = 0 %}
+        {% assign AR_best = 0 %}
+        {% assign ECE_best = 1 %} 
+        {% assign A10_best = 0 %}
+        {% for m in site.data.leaderboard[lang].models.models %}
+          {% if dataset[1][m].AC and dataset[1][m].AC > AC_best %}
+            {% assign AC_best = dataset[1][m].AC %}
+          {% endif %}
+          {% if dataset[1][m].F1 and dataset[1][m].F1 > F1_best %}
+            {% assign F1_best = dataset[1][m].F1 %}
+          {% endif %}
+          {% if dataset[1][m].AR and dataset[1][m].AR > AR_best %}
+            {% assign AR_best = dataset[1][m].AR %}
+          {% endif %}
+          {% if dataset[1][m].ECE and dataset[1][m].ECE < ECE_best %}
+            {% assign ECE_best = dataset[1][m].ECE %}
+          {% endif %}
+          {% if dataset[1][m]["A@10"] and dataset[1][m]["A@10"] > A10_best %}
+            {% assign A10_best = dataset[1][m]["A@10"] %}
+          {% endif %}
+        {% endfor %}
+        <td class="text-center" {% if dataset[1][model].AC == AC_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].AC %}
+          {{ dataset[1][model].AC | round: 2 }} ± {{ dataset[1][model].AC_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model].F1 == F1_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].F1 %}
+          {{ dataset[1][model].F1 | round: 2 }} ± {{ dataset[1][model].F1_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model].AR == AR_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].AR %}
+          {{ dataset[1][model].AR | round: 2 }} ± {{ dataset[1][model].AR_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model].ECE == ECE_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model].ECE %}
+          {{ dataset[1][model].ECE | round: 2 }} ± {{ dataset[1][model].ECE_std | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+        <td class="text-center" {% if dataset[1][model]["A@10"] == A10_best %}style="background-color: cyan;"{% endif %}>
+          {% if dataset[1][model]["A@10"] %}
+          {{ dataset[1][model]["A@10"] | round: 2 }} ± {{ dataset[1][model]["A@10_std"] | round: 2 }}
+          {% else %}
+          -
+          {% endif %}
+        </td>
+      {% endfor %}
     </tr>
-    <tr>
-      <td class="text-center"><b>Our 13B</b></td>
-      <td class="text-center">0.62 ± 0.02</td>
-      <td class="text-center">0.62 ± 0.02</td>
-      <td class="text-center">0.61 ± 0.02</td>
-      <td class="text-center">0.15 ± 0.02</td>
-      <td class="text-center">0.67 ± 0.07</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>Our 7B</b></td>
-      <td class="text-center">0.45 ± 0.02</td>
-      <td class="text-center">0.36 ± 0.02</td>
-      <td class="text-center">0.57 ± 0.02</td>
-      <td class="text-center">0.10 ± 0.02</td>
-      <td class="text-center">0.45 ± 0.07</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>LLaMa-2 13B</b></td>
-      <td class="text-center">0.57 ± 0.02</td>
-      <td class="text-center">0.57 ± 0.02</td>
-      <td class="text-center">0.57 ± 0.02</td>
-      <td class="text-center">0.29 ± 0.02</td>
-      <td class="text-center">0.75 ± 0.07</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>LLaMa-2 7B</b></td>
-      <td class="text-center">0.36 ± 0.02</td>
-      <td class="text-center">0.27 ± 0.02</td>
-      <td class="text-center">0.56 ± 0.02</td>
-      <td class="text-center">0.37 ± 0.02</td>
-      <td class="text-center">0.44 ± 0.07</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>Vietcuna 7B</b></td>
-      <td class="text-center">0.26 ± 0.02</td>
-      <td class="text-center">0.15 ± 0.01</td>
-      <td class="text-center">0.50 ± 0.00</td>
-      <td class="text-center" style="background-color: cyan;">0.01 ± 0.01</td>
-      <td class="text-center">0.26 ± 0.06</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>MixSUra 7B</b></td>
-      <td class="text-center">0.61 ± -</td>
-      <td class="text-center">0.61 ± -</td>
-      <td class="text-center">0.54 ± -</td>
-      <td class="text-center">0.31 ± -</td>
-      <td class="text-center">0.65 ± -</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>GPT-3.5</b></td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.92 ± 0.01</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.74 ± 0.04</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.67 ± 0.01</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.92 ± 0.04</td>
-    </tr>
-    <tr>
-      <td class="text-center"><b>GPT-4</b></td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.92 ± 0.01</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.74 ± 0.04</td>
-      <td class="text-center">-</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.67 ± 0.01</td>
-      <td class="text-center" style="background-color: #f0f0f0;">0.92 ± 0.04</td>
-    </tr>
+    {% endfor %}
   </tbody>
 </table>

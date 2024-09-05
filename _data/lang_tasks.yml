@@ -3,6 +3,7 @@ vi:
     zero-shot: true
     few-shot: false
     weaker-prompt: true
+    medium-prompt: true
     fairness-aware: true
     robustness-aware: true
     chain-of-thought: false
@@ -12,6 +13,7 @@ vi:
     zero-shot: true
     few-shot: false
     weaker-prompt: true
+    medium-prompt: true
     fairness-aware: false
     robustness-aware: true
     chain-of-thought: false

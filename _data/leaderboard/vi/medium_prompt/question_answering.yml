@@ -1,0 +1,82 @@
+XQuAD:
+  URA-LLaMa 70B:
+    EM: 0.08
+    EM_std: 0.00
+    F1: 0.33
+    F1_std: 0.00
+  URA-LLaMa 13B:
+    EM: 0.04
+    EM_std: 0.00
+    F1: 0.21
+    F1_std: 0.00
+  URA-LLaMa 7B:
+    EM: 0.01
+    EM_std: 0.00
+    F1: 0.11
+    F1_std: 0.00
+  LLaMa-2 13B:
+    EM: 0.00
+    EM_std: 0.00
+    F1: 0.10
+    F1_std: 0.00
+  LLaMa-2 7B:
+    EM: 0.00
+    EM_std: 0.00
+    F1: 0.03
+    F1_std: 0.00
+  MixSUra:
+    EM: 0.01
+    EM_std: null
+    F1: 0.25
+    F1_std: null
+  GPT-3.5:
+    EM: null
+    EM_std: null
+    F1: null
+    F1_std: null
+  GPT-4:
+    EM: null
+    EM_std: null
+    F1: null
+    F1_std: null
+MLQA:
+  URA-LLaMa 70B:
+    EM: 0.07
+    EM_std: 0.00
+    F1: 0.31
+    F1_std: 0.00
+  URA-LLaMa 13B:
+    EM: 0.04
+    EM_std: 0.00
+    F1: 0.19
+    F1_std: 0.00
+  URA-LLaMa 7B:
+    EM: 0.01
+    EM_std: 0.00
+    F1: 0.11
+    F1_std: 0.00
+  LLaMa-2 13B:
+    EM: 0.00
+    EM_std: 0.00
+    F1: 0.09
+    F1_std: 0.00
+  LLaMa-2 7B:
+    EM: 0.00
+    EM_std: 0.00
+    F1: 0.03
+    F1_std: 0.00
+  MixSUra:
+    EM: 0.00
+    EM_std: null
+    F1: 0.25
+    F1_std: null
+  GPT-3.5:
+    EM: null
+    EM_std: null
+    F1: null
+    F1_std: null
+  GPT-4:
+    EM: null
+    EM_std: null
+    F1: null
+    F1_std: null
