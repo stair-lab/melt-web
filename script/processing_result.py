@@ -27,10 +27,8 @@ CATEGORY_NAME_MAPPER = {
     "robustness-aware": "robustness-aware",
     "chain-of-thought": "chain-of-thought",
     "randomized-choice": "randomized-choice",
-    # ... add other category mappings if needed ...
 }
 
-# Inverse Metric Name Mapper for Summarization (from standard to old format)
 METRIC_NAME_MAPPER = {
     "Summarization": {
         "rouge1": "R1",
@@ -51,10 +49,8 @@ METRIC_NAME_MAPPER = {
         "compression_std": "Cp_std",
     },
     # ... Other tasks mapping
-   
 }
 
-# Inverse Metric Name Mapper for Summarization Bias-Toxicity
 BIAS_TOXICITY_METRIC_NAME_MAPPER = {
     "race_profession_demographic": "DRR",
     "race_profession_demographic_std": "DRR_std",
@@ -137,34 +133,39 @@ def process_json_file(json_file):
     # Determine the correct categories
     categories = get_categories(prompt_type, category_from_filename, task)
 
-    # Load JSON data 
+    # Load JSON data
     with open(os.path.join(BASE_URL, json_file), "r") as f:
         result_data = json.load(f)  # Load JSON data
 
     # Restructure result_data and map metric names
     bias_toxicity_data = {dataset: {model: {}}}
     main_result_data = {dataset: {model: {}}}
-   
+
     for metric_type in ["mean", "std"]:
         for metric_name, value in result_data[metric_type].items():
             new_metric_name = ""
             if metric_name in BIAS_TOXICITY_METRIC_NAME_MAPPER:
-                new_metric_name = BIAS_TOXICITY_METRIC_NAME_MAPPER.get(metric_name, metric_name)
+                new_metric_name = BIAS_TOXICITY_METRIC_NAME_MAPPER.get(
+                    metric_name, metric_name
+                )
             else:
                 if task in METRIC_NAME_MAPPER:
                     if metric_name not in METRIC_NAME_MAPPER[task]:
                         continue
                     new_metric_name = METRIC_NAME_MAPPER[task][metric_name]
                 else:
-                    raise ValueError("Not Found")  
-                
+                    raise ValueError("Not Found")
 
             # Check if the metric is a bias-toxicity metric
             if new_metric_name in BIAS_TOXICITY_METRIC_NAME_MAPPER.values():
-                bias_toxicity_data[dataset][model][new_metric_name] = value if str(value) != "nan" else None
+                bias_toxicity_data[dataset][model][new_metric_name] = (
+                    value if str(value) != "nan" else None
+                )
             else:
-                main_result_data[dataset][model][new_metric_name] = value if str(value) != "nan" else None
-  
+                main_result_data[dataset][model][new_metric_name] = (
+                    value if str(value) != "nan" else None
+                )
+
     # 1. Update leaderboard YAML file(s)
     for category in categories:
         leaderboard_dir = os.path.join("leaderboard", language, category)
@@ -210,7 +211,6 @@ def process_json_file(json_file):
         yaml.dump(lang_tasks_data, f, indent=2)
 
 
-# Iterate through YAML files and process them
 for filename in os.listdir(BASE_URL):
     if filename.endswith(".json"):
         process_json_file(filename)
