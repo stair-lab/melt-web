@@ -1,0 +1,33 @@
+name: Update Results
+
+on:
+  push:
+    paths:
+      - 'results/*.json'  # Trigger workflow when JSON files in 'results' are changed
+
+jobs:
+  update-yamls:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'  # Or your desired Python version
+
+      - name: Install dependencies (if any)
+        run: |
+          pip install pyyaml  # Replace with your actual dependency file
+
+      - name: Run processing script
+        run: python script/processing_result.py
+
+      - name: Committo repository
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: 'Update yaml results'
+          # This should be the path to the paper within your repo.
+          add: '_data/*' 
